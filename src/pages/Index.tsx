@@ -33,7 +33,7 @@ const Index = () => {
             >
               <div>
                 <p className="font-satoshi text-sm text-white/60">Vamos conversar?</p>
-                <p className="font-playfair italic text-xl">Contato</p>
+                <p className="font-satoshi text-xl">Contato</p>
               </div>
               <div className="rounded-full p-2 border border-white/20">
                 <ArrowUpRight className="w-6 h-6" />
