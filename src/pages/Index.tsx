@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
+import { ArrowUpRight } from "lucide-react";
 
 const Index = () => {
   return (
@@ -8,7 +9,14 @@ const Index = () => {
       
       {/* Hero Section */}
       <section id="home" className="min-h-screen pt-16 relative overflow-hidden">
-        <div className="absolute inset-0 gradient-bg opacity-20" />
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: "url('/lovable-uploads/0031cfb1-7d9a-4023-bc34-7b2cc1e4e4bf.png')",
+            backgroundSize: 'cover'
+          }}
+        />
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
         <div className="container mx-auto px-4 pt-20 relative">
           <div className="flex flex-col items-center justify-center min-h-[80vh] text-center">
             <img
@@ -16,9 +24,21 @@ const Index = () => {
               alt="Lumiuz Digital"
               className="mb-8 max-w-md w-full"
             />
-            <p className="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl font-satoshi text-white/80 max-w-2xl mx-auto mb-8">
               Acreditamos na magia da criatividade e somos movidos por ela.
             </p>
+            <a 
+              href="#contato" 
+              className="group flex items-center gap-4 glass hover:bg-white/20 transition-all duration-300 rounded-full px-8 py-4 text-left"
+            >
+              <div>
+                <p className="font-satoshi text-sm text-white/60">Vamos conversar?</p>
+                <p className="font-playfair italic text-xl">Contato</p>
+              </div>
+              <div className="rounded-full p-2 border border-white/20">
+                <ArrowUpRight className="w-6 h-6" />
+              </div>
+            </a>
           </div>
         </div>
       </section>
