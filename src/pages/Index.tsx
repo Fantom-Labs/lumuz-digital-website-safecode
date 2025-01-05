@@ -22,22 +22,20 @@ const Index = () => {
             <img
               src="/lovable-uploads/141c127b-1d2e-40a5-a18f-5ff83f8b4cf1.png"
               alt="Lumiuz Digital"
-              className="mb-8 max-w-md w-full"
+              className="mb-8 max-w-xl w-full" // Increased size with max-w-xl
             />
-            <p className="text-xl md:text-2xl font-satoshi text-white/80 max-w-2xl mx-auto mb-8">
-              Acreditamos na magia da criatividade e somos movidos por ela.
+            <p className="text-xl md:text-2xl font-satoshi text-white/80 max-w-2xl mx-auto mb-8 text-left">
+              Acreditamos na <span className="font-playfair italic">magia</span> da<br />
+              criatividade e somos movidos por ela.
             </p>
             <a 
               href="#contato" 
-              className="group flex items-center gap-4 glass hover:bg-white/20 transition-all duration-300 rounded-full px-8 py-4 text-left"
+              className="group flex items-center gap-4 glass hover:bg-white/20 transition-all duration-300 rounded-full px-6 py-3 text-left"
             >
-              <div>
-                <p className="font-satoshi text-sm text-white/60">Vamos conversar?</p>
-                <p className="font-satoshi text-xl">Contato</p>
+              <div className="rounded-full p-3 border border-white/20">
+                <ArrowUpRight className="w-5 h-5" />
               </div>
-              <div className="rounded-full p-2 border border-white/20">
-                <ArrowUpRight className="w-6 h-6" />
-              </div>
+              <p className="font-satoshi uppercase text-sm tracking-wider">Contato</p>
             </a>
           </div>
         </div>
