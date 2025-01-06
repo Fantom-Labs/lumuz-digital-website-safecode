@@ -21,11 +21,11 @@ const Index = () => {
         <div className="container mx-auto px-4 pt-20 relative">
           <div className="flex flex-col min-h-[80vh] justify-center">
             {/* Logo Container */}
-            <div className="flex justify-center mb-11">
+            <div className="flex justify-center mb-20">
               <img
                 src="/lovable-uploads/141c127b-1d2e-40a5-a18f-5ff83f8b4cf1.png"
                 alt="Lumiuz Digital"
-                className="w-[900px]"
+                className="w-[600px]"
               />
             </div>
             
