@@ -19,25 +19,30 @@ const Index = () => {
         />
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
         <div className="container mx-auto px-4 pt-20 relative">
-          <div className="flex flex-col min-h-[80vh]">
-            <div className="flex flex-col items-start">
+          <div className="flex flex-col min-h-[80vh] justify-center">
+            {/* Logo Container */}
+            <div className="flex justify-center mb-20">
               <img
                 src="/lovable-uploads/141c127b-1d2e-40a5-a18f-5ff83f8b4cf1.png"
                 alt="Lumiuz Digital"
-                className="mb-8 max-w-xl w-full"
+                className="w-[600px]"
               />
-              <div className="max-w-2xl mb-4">
+            </div>
+            
+            {/* Text and Button Container */}
+            <div className="flex justify-between items-center">
+              {/* Text and Separator */}
+              <div className="max-w-xl">
                 <p className="text-xl md:text-2xl font-satoshi text-white/80 text-left">
                   Acreditamos na <span className="font-playfair italic">magia</span> da<br />
                   criatividade e somos movidos por ela.
                 </p>
-                <Separator className="mt-6 bg-white/20" />
               </div>
-            </div>
-            <div className="flex justify-end">
+
+              {/* Contact Button */}
               <a 
                 href="#contato" 
-                className="group flex items-center gap-4 glass hover:bg-white/20 transition-all duration-300 rounded-full px-6 py-3 text-left"
+                className="group flex items-center gap-4 glass hover:bg-white/20 transition-all duration-300 rounded-full px-6 py-3"
               >
                 <div className="rounded-full p-3 border border-white/20">
                   <ArrowUpRight className="w-5 h-5" />
@@ -45,11 +50,16 @@ const Index = () => {
                 <p className="font-satoshi uppercase text-sm tracking-wider">Contato</p>
               </a>
             </div>
+
+            {/* Centered Separator */}
+            <div className="w-full mt-8">
+              <Separator className="bg-white/20 h-[1px] w-full" />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Sobre Section */}
+      {/* Other sections */}
       <section id="sobre" className="min-h-screen py-20 relative">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Sobre</h2>
