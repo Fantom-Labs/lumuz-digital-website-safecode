@@ -21,11 +21,11 @@ const Index = () => {
         <div className="container mx-auto px-4 pt-20 relative">
           <div className="flex flex-col min-h-[80vh] justify-center">
             {/* Logo Container */}
-            <div className="flex justify-center mb-20">
+            <div className="flex justify-center mb-[88px]">
               <img
                 src="/lovable-uploads/141c127b-1d2e-40a5-a18f-5ff83f8b4cf1.png"
                 alt="Lumiuz Digital"
-                className="w-[600px]"
+                className="w-[750px]"
               />
             </div>
             
@@ -59,7 +59,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Other sections */}
       <section id="sobre" className="min-h-screen py-20 relative">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Sobre</h2>
