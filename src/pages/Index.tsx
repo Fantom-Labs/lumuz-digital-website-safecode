@@ -66,26 +66,10 @@ const Index = () => {
             {/* Left side - Image */}
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-                alt="Laptop mockup"
+                src="/lovable-uploads/0fbb8540-2ee3-4bab-86ca-cc9700af7343.png"
+                alt="Laptop mockup with notifications"
                 className="w-full h-auto rounded-lg transform -rotate-12 hover:rotate-0 transition-transform duration-500"
               />
-              <div className="absolute -left-4 top-1/2 -translate-y-1/2">
-                {/* Notification Pills */}
-                <div className="space-y-3">
-                  {[...Array(5)].map((_, index) => (
-                    <div key={index} className="glass rounded-lg p-2 transform translate-x-[${index * 10}px] w-48">
-                      <div className="flex items-center gap-2">
-                        <div className="w-6 h-6 rounded-md bg-blue-500"></div>
-                        <div className="text-sm">
-                          <p className="text-white/80">Venda realizada!</p>
-                          <p className="text-white/60 text-xs">Você recebeu: 909,98</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
 
             {/* Right side - Content */}
