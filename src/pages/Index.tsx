@@ -59,13 +59,65 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="sobre" className="min-h-screen py-20 relative">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Sobre</h2>
-          <div className="max-w-3xl mx-auto text-white/80">
-            <p className="mb-6">
-              Content for Sobre section...
-            </p>
+      {/* Sobre Section */}
+      <section id="sobre" className="min-h-screen relative overflow-hidden">
+        <div className="container mx-auto px-4 flex items-center min-h-screen">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            {/* Left side - Image */}
+            <div className="relative">
+              <img
+                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+                alt="Laptop mockup"
+                className="w-full h-auto rounded-lg transform -rotate-12 hover:rotate-0 transition-transform duration-500"
+              />
+              <div className="absolute -left-4 top-1/2 -translate-y-1/2">
+                {/* Notification Pills */}
+                <div className="space-y-3">
+                  {[...Array(5)].map((_, index) => (
+                    <div key={index} className="glass rounded-lg p-2 transform translate-x-[${index * 10}px] w-48">
+                      <div className="flex items-center gap-2">
+                        <div className="w-6 h-6 rounded-md bg-blue-500"></div>
+                        <div className="text-sm">
+                          <p className="text-white/80">Venda realizada!</p>
+                          <p className="text-white/60 text-xs">Você recebeu: 909,98</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Right side - Content */}
+            <div className="space-y-8">
+              <h2 className="text-4xl font-bold">
+                Somos uma agência criativa especializada em acelerar seus resultados na internet.
+              </h2>
+              <p className="text-white/80 text-lg">
+                Para nós, a produção ilumina todo o caminho por onde passa. Criamos estratégias para crescimento de marcas e vendas.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center gap-2">
+                  <div className="flex -space-x-2">
+                    {[...Array(6)].map((_, index) => (
+                      <div
+                        key={index}
+                        className="w-8 h-8 rounded-full bg-gray-300 border-2 border-black"
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm text-white/80">
+                    RESULTADOS GERADOS PARA +100 CLIENTES.
+                  </span>
+                </div>
+                <a 
+                  href="#contato"
+                  className="block text-center bg-black border border-white/10 rounded-lg py-4 px-6 text-white hover:bg-white/10 transition-colors"
+                >
+                  Entrar em contato
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
