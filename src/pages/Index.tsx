@@ -83,8 +83,8 @@ const Index = () => {
                     />
                   </div>
                   <div className="text-left">
-                    <p className="text-sm font-medium">Nova mensagem</p>
-                    <p className="text-xs text-white/60">Há 2 minutos atrás</p>
+                    <p className="text-sm font-medium">Novo projeto</p>
+                    <p className="text-xs text-white/60">Há 5 minutos atrás</p>
                   </div>
                 </div>
               </div>
@@ -106,7 +106,6 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Right side - Content */}
             <div className="space-y-8">
               <h2 className="text-4xl font-bold">
                 Somos uma agência criativa especializada em acelerar seus resultados na internet.
