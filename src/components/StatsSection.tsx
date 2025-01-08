@@ -26,7 +26,13 @@ const StatsSection = () => {
               className="bg-black/20 backdrop-blur-md p-8 rounded-lg text-center space-y-4"
             >
               <h3 
-                className="text-5xl font-bold bg-gradient-to-r from-[#00C2FF] via-[#A438FF] to-[#FF8A76] text-transparent bg-clip-text"
+                className="text-5xl font-bold"
+                style={{
+                  background: 'linear-gradient(to right, #00C2FF 0%, #A438FF 50%, #FF8A76 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
+                }}
               >
                 {stat.number}
               </h3>
