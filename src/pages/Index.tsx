@@ -152,7 +152,7 @@ const Index = () => {
 
       {/* FAQ Section */}
       <FAQSection />
-      <Separator className="bg-[#888888] h-[1px] w-full max-w-4xl mx-auto" />
+      <Separator className="bg-[#888888]/10 h-[1px] w-full max-w-4xl mx-auto" />
 
       {/* Contact Section */}
       <section id="contato" className="py-32 relative">

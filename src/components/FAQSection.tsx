@@ -1,56 +1,51 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+
+const faqs = [
+  {
+    question: "Como funciona o processo de criação?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius aut unde, dolores accusantium!",
+  },
+  {
+    question: "Qual o prazo de entrega dos projetos?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius aut unde, dolores accusantium!",
+  },
+  {
+    question: "Vocês atendem em qual região?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius aut unde, dolores accusantium!",
+  },
+  {
+    question: "Como funciona o suporte?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius aut unde, dolores accusantium!",
+  },
+];
 
 const FAQSection = () => {
-  const faqs = [
-    {
-      question: "Quanto tempo é necessário para ter resultados?",
-      answer: "O tempo necessário para resultados varia de acordo com diversos fatores como seu mercado, produto e objetivos específicos. Geralmente, começamos a ver resultados iniciais em 3-6 meses."
-    },
-    {
-      question: "Como a Lumuz pode me ajudar a vender mais?",
-      answer: "Através de estratégias personalizadas de marketing digital, otimização de conversão e análise de dados para maximizar seus resultados de vendas."
-    },
-    {
-      question: "Como posso entrar em contato?",
-      answer: "Você pode entrar em contato através do formulário em nosso site, pelo WhatsApp ou email. Nossa equipe está pronta para atendê-lo."
-    },
-    {
-      question: "Como saber o serviço que estou precisando?",
-      answer: "Realizamos uma análise completa do seu negócio e objetivos para recomendar as melhores soluções para suas necessidades específicas."
-    },
-    {
-      question: "Qual a diferença da Lumuz para outras agências?",
-      answer: "Nos diferenciamos pela abordagem personalizada, foco em resultados mensuráveis e experiência comprovada em diversos segmentos."
-    }
-  ];
-
   return (
     <section id="faq" className="py-32 relative">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-between items-start mb-16">
-            <h2 className="text-[28px] font-bold">Alguma dúvida?</h2>
+            <h2 className="text-[32px] font-normal">Alguma dúvida?</h2>
             <p className="text-white/60 max-w-md text-right">
               At vero eos et accusamus et iusto odio dignissimos ducimus lorem.
             </p>
           </div>
-          
-          <Accordion type="single" collapsible className="space-y-4">
+
+          <Accordion type="single" collapsible className="space-y-6">
             {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
+              <AccordionItem
+                key={index}
                 value={`item-${index}`}
-                className="group border-b border-white/10 last:border-b-0 hover:bg-white/5 transition-colors duration-300 rounded-lg"
+                className="glass px-8 rounded-lg data-[state=open]:bg-white/10 transition-colors duration-300"
               >
-                <AccordionTrigger className="text-lg hover:no-underline py-6 px-6">
+                <AccordionTrigger className="py-6 text-lg hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-white/60 px-6">
+                <AccordionContent className="text-white/60">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
