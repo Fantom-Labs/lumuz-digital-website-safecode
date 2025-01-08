@@ -186,11 +186,7 @@ const Index = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 glass hover:bg-white/10 transition-all duration-300 rounded-full px-6 py-3 w-full"
               >
-                <img
-                  src="/lovable-uploads/87d7708b-4bbe-45a6-822e-908f38a82859.png"
-                  alt="WhatsApp"
-                  className="w-5 h-5"
-                />
+                <MessageCircle className="w-5 h-5" />
                 <span className="uppercase text-sm tracking-wider">Falar com a Lumuz</span>
               </a>
             </div>
