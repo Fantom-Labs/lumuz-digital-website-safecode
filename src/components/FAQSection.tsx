@@ -28,9 +28,9 @@ const FAQSection = () => {
     <section id="faq" className="py-32 relative">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="flex justify-between items-start mb-16">
-            <h2 className="text-[32px] font-normal">Alguma dúvida?</h2>
-            <p className="text-white/60 max-w-md text-right">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-16 gap-8">
+            <h2 className="text-[32px] font-normal text-center md:text-left">Alguma dúvida?</h2>
+            <p className="text-white/60 max-w-md text-center md:text-right">
               At vero eos et accusamus et iusto odio dignissimos ducimus lorem.
             </p>
           </div>
