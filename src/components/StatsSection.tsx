@@ -5,7 +5,7 @@ const StatsSection = () => {
     {
       number: "+50",
       description: "Empresas transformadas e no topo de seu mercado de atuação.",
-      gradient: "from-[#00C2FF] to-[#A438FF]"
+      gradient: "from-[#00C2FF] via-[#A438FF] to-[#FF8A76]"
     },
     {
       number: "+R$20M",
@@ -15,7 +15,7 @@ const StatsSection = () => {
     {
       number: "+6",
       description: "Anos de experiência no mercado digital com projetos em todo o Brasil.",
-      gradient: "from-[#A438FF] to-[#FF8A76]"
+      gradient: "from-[#00C2FF] via-[#A438FF] to-[#FF8A76]"
     }
   ];
 
