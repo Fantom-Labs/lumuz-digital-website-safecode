@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
 import CasesSection from "@/components/CasesSection";
 import ProjectsSection from "@/components/ProjectsSection";
-import { ArrowUpRight, MessageCircle, DollarSign } from "lucide-react";
+import { ArrowUpRight, BarChart2, Hash, MousePointer, MessageSquare, Star, Video } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
@@ -64,86 +64,84 @@ const Index = () => {
       {/* Sobre Section */}
       <section id="sobre" className="min-h-screen relative overflow-hidden">
         <div className="container mx-auto px-4 flex flex-col min-h-screen">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-32">
-            {/* Left side - Image and Notifications */}
-            <div className="relative">
-              {/* Main Image */}
-              <img
-                src="https://images.unsplash.com/photo-1531297484001-80022131f5a1"
-                alt="Laptop mockup with notifications"
-                className="w-full h-auto rounded-lg transform -rotate-12 hover:rotate-0 transition-transform duration-500"
-              />
-              
-              {/* Notification Pills */}
-              <div className="absolute top-10 -right-4 glass rounded-lg p-4 transform rotate-12 hover:rotate-0 transition-transform duration-500">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-white/10">
-                    <MessageCircle className="w-6 h-6" />
-                  </div>
-                  <div className="text-left">
-                    <p className="text-sm font-medium">Nova mensagem</p>
-                    <p className="text-xs text-white/60">Há 2 minutos atrás</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute bottom-10 -left-4 glass rounded-lg p-4 transform rotate-12 hover:rotate-0 transition-transform duration-500">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-white/10">
-                    <DollarSign className="w-6 h-6" />
-                  </div>
-                  <div className="text-left">
-                    <p className="text-sm font-medium">Venda Realizada</p>
-                    <p className="text-xs text-white/60">Há 5 minutos atrás</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right side - Content */}
-            <div className="space-y-8">
-              <h2 className="text-4xl font-bold">
-                Somos uma agência criativa especializada em acelerar seus resultados na internet.
-              </h2>
-              <p className="text-white/80 text-lg">
-                Para nós, a produção ilumina todo o caminho por onde passa. Criamos estratégias para crescimento de marcas e vendas.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center gap-2">
-                  <div className="flex -space-x-2">
-                    {[...Array(6)].map((_, index) => (
-                      <div
-                        key={index}
-                        className="w-8 h-8 rounded-full bg-gray-300 border-2 border-black"
-                      />
-                    ))}
-                  </div>
-                  <span className="text-sm text-white/80">
-                    RESULTADOS GERADOS PARA +100 CLIENTES.
-                  </span>
-                </div>
-                <a 
-                  href="#contato"
-                  className="block text-center bg-black border border-transparent rounded-lg py-4 px-6 text-white hover:bg-white/10 transition-colors relative"
-                  style={{
-                    background: 'linear-gradient(black, black) padding-box, linear-gradient(90deg, #00C2FF, #A438FF, #FF8A76) border-box',
-                    borderWidth: '1px',
-                    borderStyle: 'solid'
-                  }}
-                >
-                  Entrar em contato
-                </a>
-              </div>
-            </div>
+          <div className="flex flex-col md:flex-row justify-between items-start mb-16">
+            <h2 className="text-[28px] font-bold max-w-sm">
+              Conheça os nossos serviços
+            </h2>
+            <p className="text-white/80 max-w-lg">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
+            </p>
           </div>
 
-          {/* Grid Section */}
+          <Separator className="bg-white/20 h-[1px] w-full mb-16" />
+
+          {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[...Array(6)].map((_, index) => (
-              <div key={index} className="relative aspect-square overflow-hidden rounded-lg">
-                <div className="absolute inset-0 bg-gray-500" />
+            {/* Gestão de Tráfego */}
+            <div className="glass rounded-lg p-8 flex flex-col items-center text-center">
+              <div className="w-16 h-16 mb-6 flex items-center justify-center">
+                <img src="/lovable-uploads/4a57368c-eb28-4295-ae20-3d5108921c12.png" alt="Gestão de Tráfego" className="w-full h-full" />
               </div>
-            ))}
+              <h3 className="text-2xl font-medium mb-4">Gestão de Tráfego</h3>
+              <p className="text-white/60">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio.
+              </p>
+            </div>
+
+            {/* Social Media */}
+            <div className="glass rounded-lg p-8 flex flex-col items-center text-center">
+              <div className="w-16 h-16 mb-6 flex items-center justify-center">
+                <img src="/lovable-uploads/881b905d-f55a-46f6-9e64-9b1d3b85da2b.png" alt="Social Media" className="w-full h-full" />
+              </div>
+              <h3 className="text-2xl font-medium mb-4">Social Media</h3>
+              <p className="text-white/60">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio.
+              </p>
+            </div>
+
+            {/* Web Design */}
+            <div className="glass rounded-lg p-8 flex flex-col items-center text-center">
+              <div className="w-16 h-16 mb-6 flex items-center justify-center">
+                <img src="/lovable-uploads/6a9dc903-8424-4ed7-be4f-d012c9cc743e.png" alt="Web Design" className="w-full h-full" />
+              </div>
+              <h3 className="text-2xl font-medium mb-4">Web Design</h3>
+              <p className="text-white/60">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio.
+              </p>
+            </div>
+
+            {/* Copywriting */}
+            <div className="glass rounded-lg p-8 flex flex-col items-center text-center">
+              <div className="w-16 h-16 mb-6 flex items-center justify-center">
+                <img src="/lovable-uploads/7c0bd7c4-6441-4acb-abb3-ac39a392ce8b.png" alt="Copywriting" className="w-full h-full" />
+              </div>
+              <h3 className="text-2xl font-medium mb-4">Copywriting</h3>
+              <p className="text-white/60">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio.
+              </p>
+            </div>
+
+            {/* Branding */}
+            <div className="glass rounded-lg p-8 flex flex-col items-center text-center">
+              <div className="w-16 h-16 mb-6 flex items-center justify-center">
+                <img src="/lovable-uploads/9facb96e-e63e-41cc-ba61-fc709a7eba6d.png" alt="Branding" className="w-full h-full" />
+              </div>
+              <h3 className="text-2xl font-medium mb-4">Branding</h3>
+              <p className="text-white/60">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio.
+              </p>
+            </div>
+
+            {/* Audiovisual */}
+            <div className="glass rounded-lg p-8 flex flex-col items-center text-center">
+              <div className="w-16 h-16 mb-6 flex items-center justify-center">
+                <img src="/lovable-uploads/f0d77c04-600b-4866-81fa-85b63328ddc5.png" alt="Audiovisual" className="w-full h-full" />
+              </div>
+              <h3 className="text-2xl font-medium mb-4">Audiovisual</h3>
+              <p className="text-white/60">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio.
+              </p>
+            </div>
           </div>
         </div>
       </section>
