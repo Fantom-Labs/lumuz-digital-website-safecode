@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
 import CasesSection from "@/components/CasesSection";
 import ProjectsSection from "@/components/ProjectsSection";
-import { ArrowUpRight, BarChart2, Hash, MousePointer, MessageSquare, Star, Video } from "lucide-react";
+import { ArrowUpRight, MessageCircle, DollarSign } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
@@ -64,16 +64,87 @@ const Index = () => {
       {/* Sobre Section */}
       <section id="sobre" className="min-h-screen relative overflow-hidden">
         <div className="container mx-auto px-4 flex flex-col min-h-screen">
-          <div className="flex flex-col md:flex-row justify-between items-start mb-16">
-            <h2 className="text-[28px] font-bold max-w-sm">
-              Conheça os nossos serviços
-            </h2>
-            <p className="text-white/80 max-w-lg">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-32">
+            {/* Left side - Image and Notifications */}
+            <div className="relative">
+              {/* Main Image */}
+              <img
+                src="https://images.unsplash.com/photo-1531297484001-80022131f5a1"
+                alt="Laptop mockup with notifications"
+                className="w-full h-auto rounded-lg transform -rotate-12 hover:rotate-0 transition-transform duration-500"
+              />
+              
+              {/* Notification Pills */}
+              <div className="absolute top-10 -right-4 glass rounded-lg p-4 transform rotate-12 hover:rotate-0 transition-transform duration-500">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-white/10">
+                    <MessageCircle className="w-6 h-6" />
+                  </div>
+                  <div className="text-left">
+                    <p className="text-sm font-medium">Nova mensagem</p>
+                    <p className="text-xs text-white/60">Há 2 minutos atrás</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute bottom-10 -left-4 glass rounded-lg p-4 transform rotate-12 hover:rotate-0 transition-transform duration-500">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-white/10">
+                    <DollarSign className="w-6 h-6" />
+                  </div>
+                  <div className="text-left">
+                    <p className="text-sm font-medium">Venda Realizada</p>
+                    <p className="text-xs text-white/60">Há 5 minutos atrás</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right side - Content */}
+            <div className="space-y-8">
+              <h2 className="text-4xl font-bold">
+                Somos uma agência criativa especializada em acelerar seus resultados na internet.
+              </h2>
+              <p className="text-white/80 text-lg">
+                Para nós, a produção ilumina todo o caminho por onde passa. Criamos estratégias para crescimento de marcas e vendas.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center gap-2">
+                  <div className="flex -space-x-2">
+                    {[...Array(6)].map((_, index) => (
+                      <div
+                        key={index}
+                        className="w-8 h-8 rounded-full bg-gray-300 border-2 border-black"
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm text-white/80">
+                    RESULTADOS GERADOS PARA +100 CLIENTES.
+                  </span>
+                </div>
+                <a 
+                  href="#contato"
+                  className="block text-center bg-black border border-transparent rounded-lg py-4 px-6 text-white hover:bg-white/10 transition-colors relative"
+                  style={{
+                    background: 'linear-gradient(black, black) padding-box, linear-gradient(90deg, #00C2FF, #A438FF, #FF8A76) border-box',
+                    borderWidth: '1px',
+                    borderStyle: 'solid'
+                  }}
+                >
+                  Entrar em contato
+                </a>
+              </div>
+            </div>
           </div>
 
-          <Separator className="bg-white/20 h-[1px] w-full mb-16" />
+          {/* Grid Section */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[...Array(6)].map((_, index) => (
+              <div key={index} className="relative aspect-square overflow-hidden rounded-lg">
+                <div className="absolute inset-0 bg-gray-500" />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -81,48 +152,9 @@ const Index = () => {
       <ProjectsSection />
 
       {/* Cases Section */}
-      <section id="cases" className="min-h-screen py-20 relative">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* +50 Companies */}
-            <div className="glass p-8 rounded-lg text-center">
-              <h3 className="text-4xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-[#00C2FF] via-[#A438FF] to-[#FF8A76] bg-clip-text text-transparent">
-                  +50
-                </span>
-              </h3>
-              <p className="text-white/80">
-                Empresas transformadas e no topo de seu mercado de atuação.
-              </p>
-            </div>
+      <CasesSection />
 
-            {/* +R$20M Revenue */}
-            <div className="glass p-8 rounded-lg text-center">
-              <h3 className="text-4xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-[#00C2FF] via-[#A438FF] to-[#FF8A76] bg-clip-text text-transparent">
-                  +R$20M
-                </span>
-              </h3>
-              <p className="text-white/80">
-                Faturados para os nossos clientes através de marketing digital
-              </p>
-            </div>
-
-            {/* +6 Years */}
-            <div className="glass p-8 rounded-lg text-center">
-              <h3 className="text-4xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-[#00C2FF] via-[#A438FF] to-[#FF8A76] bg-clip-text text-transparent">
-                  +6
-                </span>
-              </h3>
-              <p className="text-white/80">
-                Anos de experiência no mercado digital com projetos em todo o Brasil.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      {/* FAQ Section */}
       <section id="faq" className="min-h-screen py-20 relative">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">FAQ</h2>
