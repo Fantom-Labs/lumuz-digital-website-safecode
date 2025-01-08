@@ -34,7 +34,7 @@ const FAQSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-between items-start mb-16">
-            <h2 className="text-4xl font-bold">Alguma dúvida?</h2>
+            <h2 className="text-[28px] font-bold">Alguma dúvida?</h2>
             <p className="text-white/60 max-w-md text-right">
               At vero eos et accusamus et iusto odio dignissimos ducimus lorem.
             </p>
@@ -56,8 +56,6 @@ const FAQSection = () => {
               </AccordionItem>
             ))}
           </Accordion>
-
-          <div className="w-full h-[1px] bg-white/10 mt-16" />
         </div>
       </div>
     </section>
