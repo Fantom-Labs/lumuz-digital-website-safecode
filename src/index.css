@@ -57,13 +57,3 @@
 .gradient-bg {
   @apply bg-gradient-to-br from-[#00C2FF] via-[#A438FF] to-[#FF8A76] animate-gradient bg-[length:400%_400%];
 }
-
-.gradient-text {
-  @apply bg-gradient-to-r from-[#00C2FF] via-[#A438FF] to-[#FF8A76] bg-clip-text text-transparent;
-}
-
-.gradient-border {
-  background: linear-gradient(black, black) padding-box,
-              linear-gradient(90deg, #00C2FF, #A438FF, #FF8A76) border-box;
-  border: 1px solid transparent;
-}
