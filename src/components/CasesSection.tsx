@@ -1,11 +1,11 @@
 import { Separator } from "@/components/ui/separator";
 import { Card } from "@/components/ui/card";
-import { BarChart3, Share2, Palette, PenTool, Layers, Video } from "lucide-react";
+import { ChartLine, Share2, Palette, PenTool, Layers, Video } from "lucide-react";
 
 const CasesSection = () => {
   const cases = [
     {
-      icon: BarChart3,
+      icon: ChartLine,
       title: "Gestão de Tráfego",
       description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio."
     },
