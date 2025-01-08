@@ -4,7 +4,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Separator } from "@/components/ui/separator";
 
 const FAQSection = () => {
   const faqs = [
@@ -40,8 +39,6 @@ const FAQSection = () => {
               At vero eos et accusamus et iusto odio dignissimos ducimus lorem.
             </p>
           </div>
-          
-          <Separator className="bg-white/60 h-[1px] w-full mb-16" />
           
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (

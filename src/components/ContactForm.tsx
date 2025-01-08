@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { MessageSquare } from "lucide-react";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -91,14 +91,9 @@ const ContactForm = () => {
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="w-full glass hover:bg-white/20 rounded-full bg-white/10 flex items-center justify-center gap-2"
+        className="w-full glass hover:bg-white/10 rounded-full"
       >
-        {isSubmitting ? "Enviando..." : (
-          <>
-            Falar com a Lumuz
-            <MessageSquare className="w-4 h-4" />
-          </>
-        )}
+        {isSubmitting ? "Enviando..." : "Enviar"}
       </Button>
     </form>
   );
