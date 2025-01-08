@@ -28,7 +28,7 @@ const StatsSection = () => {
               <h3 
                 className="text-5xl font-bold"
                 style={{
-                  background: 'linear-gradient(to right, #00C2FF 0%, #A438FF 50%, #FF8A76 100%)',
+                  background: 'linear-gradient(90deg, #00C2FF 0%, #A438FF 40%, #FF8A76 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text'
