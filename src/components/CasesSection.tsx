@@ -40,28 +40,28 @@ const CasesSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto mb-16">
           <h2 className="text-4xl font-normal mb-6">Conheça os nossos serviços</h2>
-          <p className="text-white/60 leading-relaxed">
+          <p className="text-white/80">
             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
           </p>
-          <Separator className="bg-white/10 mt-16" />
+          <Separator className="bg-white/20 mt-16" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cases.map((item, index) => (
             <Card 
               key={index}
-              className="bg-black/20 border-white/5 p-8 rounded-lg hover:bg-white/5 transition-all duration-300"
+              className="bg-black/80 border-white/10 p-8 rounded-lg hover:bg-white/5 transition-all duration-300"
             >
-              <div className="flex flex-col items-center text-center space-y-6">
-                <div className="w-16 h-16 bg-black/40 rounded-lg flex items-center justify-center">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="w-16 h-16 mb-4">
                   <img
                     src={item.icon}
                     alt={item.title}
-                    className="w-8 h-8 object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
-                <h3 className="text-2xl font-normal">{item.title}</h3>
-                <p className="text-white/60 leading-relaxed text-sm">{item.description}</p>
+                <h3 className="text-[28px] font-normal">{item.title}</h3>
+                <p className="text-white/80">{item.description}</p>
               </div>
             </Card>
           ))}
