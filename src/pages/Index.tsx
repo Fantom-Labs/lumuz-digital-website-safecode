@@ -38,7 +38,7 @@ const Index = () => {
             <div className="flex justify-between items-center">
               {/* Text and Separator */}
               <div className="max-w-xl">
-                <p className="text-xl md:text-2xl font-satoshi text-white/80 text-left">
+                <p className="text-2xl font-satoshi text-white/80 text-left">
                   Acreditamos na <span className="font-playfair italic">magia</span> da<br />
                   criatividade e somos movidos por ela.
                 </p>
