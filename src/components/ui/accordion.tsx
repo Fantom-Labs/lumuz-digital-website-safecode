@@ -1,6 +1,6 @@
 import * as React from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { Plus, Minus } from "lucide-react"
+import { Plus } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
@@ -26,19 +26,13 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex flex-1 items-center justify-between py-4 text-left font-medium transition-all",
+        "flex flex-1 items-center justify-between py-4 text-left font-medium transition-all [&[data-state=open]>svg]:rotate-45",
         className
       )}
       {...props}
     >
       {children}
-      <div className="glass h-10 w-10 rounded-lg flex items-center justify-center shrink-0">
-        {props['data-state'] === 'open' ? (
-          <Minus className="h-5 w-5" />
-        ) : (
-          <Plus className="h-5 w-5" />
-        )}
-      </div>
+      <Plus className="h-5 w-5 shrink-0 transition-transform duration-200" />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ))
