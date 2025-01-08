@@ -49,7 +49,7 @@ const Index = () => {
                 href="#contato" 
                 className="group flex flex-col items-center justify-center w-[120px] h-[120px] glass hover:bg-white/10 transition-all duration-300 rounded-full"
               >
-                <ArrowUpRight className="w-12 h-12 mb-1" strokeWidth={1.5} />
+                <ArrowUpRight className="w-12 h-12 mb-1" strokeWidth={2} />
                 <p className="font-satoshi uppercase text-sm tracking-wider">Contato</p>
               </a>
             </div>
