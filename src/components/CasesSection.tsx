@@ -1,35 +1,36 @@
 import { Separator } from "@/components/ui/separator";
 import { Card } from "@/components/ui/card";
+import { BarChart3, Share2, Palette, PenTool, Layers, Video } from "lucide-react";
 
 const CasesSection = () => {
   const cases = [
     {
-      icon: "/lovable-uploads/496fd7a2-c42e-4b4e-90b2-7dc1df0244e9.png",
+      icon: BarChart3,
       title: "Gestão de Tráfego",
       description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio."
     },
     {
-      icon: "/lovable-uploads/b7a0c177-7e5d-41cd-b502-f56cf5a0e990.png",
+      icon: Share2,
       title: "Social Media",
       description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio."
     },
     {
-      icon: "/lovable-uploads/f9d81bca-cbf0-4ff0-b674-76060e637cb5.png",
+      icon: Palette,
       title: "Web Design",
       description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio."
     },
     {
-      icon: "/lovable-uploads/bffd77ed-3c8b-4eae-bfd1-394ab82f8441.png",
+      icon: PenTool,
       title: "Copywritting",
       description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio."
     },
     {
-      icon: "/lovable-uploads/a563e291-d414-4531-b0cf-91831e35c104.png",
+      icon: Layers,
       title: "Branding",
       description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio."
     },
     {
-      icon: "/lovable-uploads/43a5d7b3-16b8-4966-bc00-f563ad7a3d68.png",
+      icon: Video,
       title: "Audiovisual",
       description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio."
     }
@@ -52,26 +53,42 @@ const CasesSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {cases.map((item, index) => (
-            <Card 
-              key={index}
-              className="bg-black/20 border-white/5 p-8 rounded-lg hover:bg-white/5 transition-all duration-300"
-            >
-              <div className="flex flex-col items-center text-center space-y-6">
-                <div className="w-16 h-16 bg-black/40 rounded-lg flex items-center justify-center">
-                  <img
-                    src={item.icon}
-                    alt={item.title}
-                    className="w-10 h-10 object-contain"
-                  />
+          {cases.map((item, index) => {
+            const IconComponent = item.icon;
+            return (
+              <Card 
+                key={index}
+                className="bg-black/20 border-white/5 p-8 rounded-lg hover:bg-white/5 transition-all duration-300"
+              >
+                <div className="flex flex-col items-center text-center space-y-6">
+                  <div className="w-16 h-16 bg-black/40 rounded-lg flex items-center justify-center">
+                    <IconComponent 
+                      className="w-10 h-10"
+                      style={{
+                        stroke: "url(#gradient)",
+                        strokeWidth: 1.5
+                      }}
+                    />
+                  </div>
+                  <h3 className="text-2xl font-normal">{item.title}</h3>
+                  <p className="text-white/60 leading-relaxed text-sm">{item.description}</p>
                 </div>
-                <h3 className="text-2xl font-normal">{item.title}</h3>
-                <p className="text-white/60 leading-relaxed text-sm">{item.description}</p>
-              </div>
-            </Card>
-          ))}
+              </Card>
+            );
+          })}
         </div>
       </div>
+
+      {/* SVG Gradient Definition */}
+      <svg width="0" height="0" className="absolute">
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style={{ stopColor: "#00C2FF" }} />
+            <stop offset="50%" style={{ stopColor: "#A438FF" }} />
+            <stop offset="100%" style={{ stopColor: "#FF8A76" }} />
+          </linearGradient>
+        </defs>
+      </svg>
     </section>
   );
 };
