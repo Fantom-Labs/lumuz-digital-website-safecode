@@ -45,17 +45,19 @@ const FAQSection = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="border-b border-white/10 last:border-b-0"
+                className="group border-b border-white/10 last:border-b-0 hover:bg-white/5 transition-colors duration-300 rounded-lg"
               >
-                <AccordionTrigger className="text-lg hover:no-underline py-6">
+                <AccordionTrigger className="text-lg hover:no-underline py-6 px-6">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-white/60">
+                <AccordionContent className="text-white/60 px-6">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
+
+          <div className="w-full h-[1px] bg-white/10 mt-16" />
         </div>
       </div>
     </section>
