@@ -91,7 +91,7 @@ const ContactForm = () => {
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="w-full glass hover:bg-white/10 rounded-full"
+        className="w-full glass hover:bg-white/10 rounded-full text-white"
       >
         {isSubmitting ? "Enviando..." : "Enviar"}
       </Button>
