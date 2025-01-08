@@ -99,7 +99,7 @@ const Index = () => {
                     />
                   </div>
                   <div className="text-left">
-                    <p className="text-sm font-medium">Novo projeto</p>
+                    <p className="text-sm font-medium">Venda Realizada</p>
                     <p className="text-xs text-white/60">Há 5 minutos atrás</p>
                   </div>
                 </div>
