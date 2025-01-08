@@ -63,8 +63,8 @@ const Index = () => {
 
       {/* Sobre Section */}
       <section id="sobre" className="min-h-screen relative overflow-hidden">
-        <div className="container mx-auto px-4 flex items-center min-h-screen">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="container mx-auto px-4 flex flex-col min-h-screen">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-32">
             {/* Left side - Image and Notifications */}
             <div className="relative">
               {/* Main Image */}
@@ -135,6 +135,15 @@ const Index = () => {
                 </a>
               </div>
             </div>
+          </div>
+
+          {/* Grid Section */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[...Array(6)].map((_, index) => (
+              <div key={index} className="relative aspect-square overflow-hidden rounded-lg">
+                <div className="absolute inset-0 bg-gray-500" />
+              </div>
+            ))}
           </div>
         </div>
       </section>
