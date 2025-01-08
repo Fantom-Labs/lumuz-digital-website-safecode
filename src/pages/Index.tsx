@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
 import CasesSection from "@/components/CasesSection";
-import { ArrowUpRight, MessageCircle } from "lucide-react";
+import { ArrowUpRight, MessageCircle, DollarSign } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
@@ -89,11 +89,7 @@ const Index = () => {
               <div className="absolute bottom-10 -left-4 glass rounded-lg p-4 transform rotate-12 hover:rotate-0 transition-transform duration-500">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-white/10">
-                    <img 
-                      src="/lovable-uploads/bbf560a9-a5e3-4d51-b9a2-637f6178d886.png"
-                      alt="Sales Icon"
-                      className="w-6 h-6"
-                    />
+                    <DollarSign className="w-6 h-6" />
                   </div>
                   <div className="text-left">
                     <p className="text-sm font-medium">Venda Realizada</p>
