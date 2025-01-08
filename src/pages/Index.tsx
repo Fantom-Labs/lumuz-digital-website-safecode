@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
 import CasesSection from "@/components/CasesSection";
-import ProjectsSection from "@/components/ProjectsSection";
 import { ArrowUpRight, MessageCircle, DollarSign } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
@@ -63,8 +62,8 @@ const Index = () => {
 
       {/* Sobre Section */}
       <section id="sobre" className="min-h-screen relative overflow-hidden">
-        <div className="container mx-auto px-4 flex flex-col min-h-screen">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-32">
+        <div className="container mx-auto px-4 flex items-center min-h-screen">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             {/* Left side - Image and Notifications */}
             <div className="relative">
               {/* Main Image */}
@@ -136,20 +135,100 @@ const Index = () => {
               </div>
             </div>
           </div>
-
-          {/* Grid Section */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[...Array(6)].map((_, index) => (
-              <div key={index} className="relative aspect-square overflow-hidden rounded-lg">
-                <div className="absolute inset-0 bg-gray-500" />
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
       {/* Projects Section */}
-      <ProjectsSection />
+      <section className="py-20 relative">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
+            <h2 className="text-3xl md:text-4xl font-bold max-w-xl">
+              Unimos estratégia e design para iluminar ideias e marcas
+            </h2>
+            <p className="text-white/80 max-w-sm">
+              Confira alguns dos nossos projetos para clientes em todo o Brasil.
+            </p>
+          </div>
+
+          {/* Projects Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Project Card 1 */}
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-lg">
+              <img
+                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+                alt="Project 1"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60" />
+              <div className="absolute bottom-0 left-0 p-6 w-full">
+                <div className="flex flex-wrap gap-2 mb-3">
+                  <span className="px-3 py-1 text-xs rounded-full bg-white/10 backdrop-blur-sm">
+                    Web Design
+                  </span>
+                  <span className="px-3 py-1 text-xs rounded-full bg-white/10 backdrop-blur-sm">
+                    Branding
+                  </span>
+                  <span className="px-3 py-1 text-xs rounded-full bg-white/10 backdrop-blur-sm">
+                    Social Media
+                  </span>
+                </div>
+                <h3 className="text-lg font-medium">Odonto Tambiá</h3>
+                <p className="text-sm text-white/60">Rede clínica</p>
+              </div>
+            </div>
+
+            {/* Project Card 2 */}
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-lg">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+                alt="Project 2"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60" />
+              <div className="absolute bottom-0 left-0 p-6 w-full">
+                <div className="flex flex-wrap gap-2 mb-3">
+                  <span className="px-3 py-1 text-xs rounded-full bg-white/10 backdrop-blur-sm">
+                    Web Design
+                  </span>
+                  <span className="px-3 py-1 text-xs rounded-full bg-white/10 backdrop-blur-sm">
+                    Branding
+                  </span>
+                  <span className="px-3 py-1 text-xs rounded-full bg-white/10 backdrop-blur-sm">
+                    Social Media
+                  </span>
+                </div>
+                <h3 className="text-lg font-medium">410 Head Shop</h3>
+                <p className="text-sm text-white/60">E-commerce</p>
+              </div>
+            </div>
+
+            {/* Project Card 3 */}
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-lg">
+              <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                alt="Project 3"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60" />
+              <div className="absolute bottom-0 left-0 p-6 w-full">
+                <div className="flex flex-wrap gap-2 mb-3">
+                  <span className="px-3 py-1 text-xs rounded-full bg-white/10 backdrop-blur-sm">
+                    Web Design
+                  </span>
+                  <span className="px-3 py-1 text-xs rounded-full bg-white/10 backdrop-blur-sm">
+                    Branding
+                  </span>
+                  <span className="px-3 py-1 text-xs rounded-full bg-white/10 backdrop-blur-sm">
+                    Social Media
+                  </span>
+                </div>
+                <h3 className="text-lg font-medium">Talvan Sobreiro</h3>
+                <p className="text-sm text-white/60">Rede clínica</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Cases Section */}
       <CasesSection />
