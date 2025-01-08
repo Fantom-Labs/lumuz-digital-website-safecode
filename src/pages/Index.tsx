@@ -72,7 +72,7 @@ const Index = () => {
               <img
                 src="/lovable-uploads/f07499d9-083e-4e8e-aaaf-b19ca892c1c9.png"
                 alt="Laptop mockup with mysterious effect"
-                className="w-full h-auto rounded-lg transform -rotate-12 hover:rotate-0 transition-transform duration-500 mysterious-animation glass"
+                className="w-1/2 mx-auto h-auto rounded-lg transform -rotate-12 hover:rotate-0 transition-transform duration-500 mysterious-animation glass"
               />
               
               {/* Notification Pills */}
@@ -111,13 +111,37 @@ const Index = () => {
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
-                  <div className="flex -space-x-2">
-                    {[...Array(6)].map((_, index) => (
-                      <div
-                        key={index}
-                        className="w-8 h-8 rounded-full bg-gray-300 border-2 border-black"
-                      />
-                    ))}
+                  <div className="flex -space-x-3">
+                    <img
+                      src="/lovable-uploads/50e03500-9101-4142-9bc6-334e5abd5dc7.png"
+                      alt="Team member 1"
+                      className="w-8 h-8 rounded-full border-2 border-black object-cover"
+                    />
+                    <img
+                      src="/lovable-uploads/50e03500-9101-4142-9bc6-334e5abd5dc7.png"
+                      alt="Team member 2"
+                      className="w-8 h-8 rounded-full border-2 border-black object-cover"
+                    />
+                    <img
+                      src="/lovable-uploads/50e03500-9101-4142-9bc6-334e5abd5dc7.png"
+                      alt="Team member 3"
+                      className="w-8 h-8 rounded-full border-2 border-black object-cover"
+                    />
+                    <img
+                      src="/lovable-uploads/50e03500-9101-4142-9bc6-334e5abd5dc7.png"
+                      alt="Team member 4"
+                      className="w-8 h-8 rounded-full border-2 border-black object-cover"
+                    />
+                    <img
+                      src="/lovable-uploads/50e03500-9101-4142-9bc6-334e5abd5dc7.png"
+                      alt="Team member 5"
+                      className="w-8 h-8 rounded-full border-2 border-black object-cover"
+                    />
+                    <img
+                      src="/lovable-uploads/50e03500-9101-4142-9bc6-334e5abd5dc7.png"
+                      alt="Team member 6"
+                      className="w-8 h-8 rounded-full border-2 border-black object-cover"
+                    />
                   </div>
                   <span className="text-sm text-white/80">
                     RESULTADOS GERADOS PARA +100 CLIENTES.
