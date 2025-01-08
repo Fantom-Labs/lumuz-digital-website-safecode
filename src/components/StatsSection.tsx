@@ -5,14 +5,17 @@ const StatsSection = () => {
     {
       number: "+50",
       description: "Empresas transformadas e no topo de seu mercado de atuação.",
+      gradient: "from-[#00C2FF] to-[#A438FF]"
     },
     {
       number: "+R$20M",
       description: "Faturados para os nossos clientes através de marketing digital",
+      gradient: "from-[#00C2FF] via-[#A438FF] to-[#FF8A76]"
     },
     {
       number: "+6",
       description: "Anos de experiência no mercado digital com projetos em todo o Brasil.",
+      gradient: "from-[#A438FF] to-[#FF8A76]"
     }
   ];
 
@@ -26,14 +29,7 @@ const StatsSection = () => {
               className="glass p-8 rounded-lg text-center space-y-4"
             >
               <h3 
-                className="text-5xl font-bold"
-                style={{
-                  background: 'linear-gradient(90deg, #00C2FF, #A438FF, #FF8A76)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundSize: '200% auto',
-                  animation: 'gradient 15s ease infinite'
-                }}
+                className={`text-5xl font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent`}
               >
                 {stat.number}
               </h3>
