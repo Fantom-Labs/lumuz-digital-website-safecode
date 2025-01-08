@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
 import CasesSection from "@/components/CasesSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import StatsSection from "@/components/StatsSection";
 import { ArrowUpRight, MessageCircle, DollarSign } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
@@ -139,11 +140,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <ProjectsSection />
+      {/* Stats Section */}
+      <StatsSection />
 
       {/* Cases Section */}
       <CasesSection />
+
+      {/* Projects Section */}
+      <ProjectsSection />
 
       {/* FAQ Section */}
       <section id="faq" className="min-h-screen py-20 relative">
