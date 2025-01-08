@@ -29,7 +29,7 @@ const StatsSection = () => {
               className="glass p-8 rounded-lg text-center space-y-4"
             >
               <h3 
-                className={`text-5xl font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent`}
+                className={`text-5xl font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent animate-gradient bg-[length:200%_200%]`}
               >
                 {stat.number}
               </h3>

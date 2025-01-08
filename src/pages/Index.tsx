@@ -3,6 +3,7 @@ import ContactForm from "@/components/ContactForm";
 import CasesSection from "@/components/CasesSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import StatsSection from "@/components/StatsSection";
+import FAQSection from "@/components/FAQSection";
 import { ArrowUpRight, MessageCircle, DollarSign } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
@@ -150,14 +151,7 @@ const Index = () => {
       <ProjectsSection />
 
       {/* FAQ Section */}
-      <section id="faq" className="min-h-screen py-20 relative">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">FAQ</h2>
-          <div className="max-w-3xl mx-auto">
-            {/* Add FAQ accordion here */}
-          </div>
-        </div>
-      </section>
+      <FAQSection />
 
       {/* Contact Section */}
       <section id="contato" className="min-h-screen py-20 relative">
