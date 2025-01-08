@@ -152,12 +152,49 @@ const Index = () => {
 
       {/* FAQ Section */}
       <FAQSection />
+      <Separator className="bg-[#888888] h-[1px] w-full max-w-4xl mx-auto" />
 
       {/* Contact Section */}
-      <section id="contato" className="min-h-screen py-20 relative">
+      <section id="contato" className="py-32 relative">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Contato</h2>
-          <ContactForm />
+          <div className="flex flex-col md:flex-row justify-between items-start mb-16">
+            <h2 className="text-4xl font-bold max-w-md">
+              Entre em contato e melhore seus resultados
+            </h2>
+            <p className="text-white/80 max-w-md">
+              Entre em contato conosco para uma consulta gratuita e transforme suas mídias e suas vendas em mais uma história de sucesso digital na Lumuz.
+            </p>
+          </div>
+
+          <Separator className="bg-[#888888] h-[1px] w-full mb-16" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <ContactForm />
+            
+            <div className="glass rounded-lg p-12 flex flex-col items-center justify-center text-center space-y-8">
+              <img
+                src="/lovable-uploads/141c127b-1d2e-40a5-a18f-5ff83f8b4cf1.png"
+                alt="Lumuz Digital"
+                className="w-48"
+              />
+              <p className="text-lg">
+                Agende uma conversa com nossa equipe. Estamos dispostos a entender sobre seu negócio e oferecer uma solução eficiente para você aumentar as vendas.
+              </p>
+              <a
+                href="https://wa.me/your-whatsapp-number"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 glass hover:bg-white/10 transition-all duration-300 rounded-full px-6 py-3 w-full"
+              >
+                <img
+                  src="/lovable-uploads/87d7708b-4bbe-45a6-822e-908f38a82859.png"
+                  alt="WhatsApp"
+                  className="w-5 h-5"
+                />
+                <span className="uppercase text-sm tracking-wider">Falar com a Lumuz</span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>
