@@ -60,16 +60,16 @@
 
 @keyframes mysterious-fade {
   0% {
-    opacity: 0.4;
-    transform: scale(1.05) rotate(-12deg);
+    opacity: 0.1;
+    transform: scale(1.025) rotate(-12deg);
   }
   50% {
-    opacity: 0.8;
+    opacity: 0.5;
     transform: scale(1) rotate(-6deg);
   }
   100% {
-    opacity: 0.4;
-    transform: scale(1.05) rotate(-12deg);
+    opacity: 0.1;
+    transform: scale(1.025) rotate(-12deg);
   }
 }
 
