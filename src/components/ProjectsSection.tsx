@@ -13,9 +13,8 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        <Separator className="bg-[#888888] h-[1px] w-full mb-16" />
+        <Separator className="bg-white/60 h-[1px] w-full mb-16" />
 
-        {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Project Card 1 */}
           <div className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-[#888888]">
