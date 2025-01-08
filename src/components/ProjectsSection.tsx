@@ -13,7 +13,7 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        <Separator className="bg-[#888888] h-[1px] w-full mb-16" />
+        <Separator className="bg-[#363636] h-[1px] w-full mb-16" />
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
