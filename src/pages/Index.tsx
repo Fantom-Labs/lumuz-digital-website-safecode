@@ -22,6 +22,7 @@ const Index = () => {
           }}
         />
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+        
         <div className="container mx-auto px-4 pt-20 relative">
           <div className="flex flex-col min-h-[80vh] justify-center">
             {/* Logo Container */}
@@ -46,11 +47,9 @@ const Index = () => {
               {/* Contact Button */}
               <a 
                 href="#contato" 
-                className="group flex items-center gap-4 glass hover:bg-white/20 transition-all duration-300 rounded-full px-6 py-3"
+                className="group flex flex-col items-center justify-center w-[120px] h-[120px] glass hover:bg-white/10 transition-all duration-300 rounded-full"
               >
-                <div className="rounded-full p-3 border border-white/20">
-                  <ArrowUpRight className="w-5 h-5" />
-                </div>
+                <ArrowUpRight className="w-7 h-7 mb-1" strokeWidth={1.5} />
                 <p className="font-satoshi uppercase text-sm tracking-wider">Contato</p>
               </a>
             </div>
