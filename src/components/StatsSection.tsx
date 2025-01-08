@@ -23,16 +23,10 @@ const StatsSection = () => {
           {stats.map((stat, index) => (
             <Card 
               key={index}
-              className="glass p-8 rounded-lg text-center space-y-4"
+              className="bg-black/20 backdrop-blur-md p-8 rounded-lg text-center space-y-4"
             >
               <h3 
-                className="text-5xl font-bold"
-                style={{
-                  background: 'linear-gradient(90deg, #00C2FF, #A438FF, #FF8A76)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
-                }}
+                className="text-5xl font-bold bg-gradient-to-r from-[#00C2FF] via-[#A438FF] to-[#FF8A76] text-transparent bg-clip-text"
               >
                 {stat.number}
               </h3>
