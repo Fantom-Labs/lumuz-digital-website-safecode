@@ -74,75 +74,6 @@ const Index = () => {
           </div>
 
           <Separator className="bg-white/20 h-[1px] w-full mb-16" />
-
-          {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Gestão de Tráfego */}
-            <div className="glass rounded-lg p-8 flex flex-col items-center text-center">
-              <div className="w-16 h-16 mb-6 flex items-center justify-center">
-                <img src="/lovable-uploads/4a57368c-eb28-4295-ae20-3d5108921c12.png" alt="Gestão de Tráfego" className="w-full h-full" />
-              </div>
-              <h3 className="text-2xl font-medium mb-4">Gestão de Tráfego</h3>
-              <p className="text-white/60">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio.
-              </p>
-            </div>
-
-            {/* Social Media */}
-            <div className="glass rounded-lg p-8 flex flex-col items-center text-center">
-              <div className="w-16 h-16 mb-6 flex items-center justify-center">
-                <img src="/lovable-uploads/881b905d-f55a-46f6-9e64-9b1d3b85da2b.png" alt="Social Media" className="w-full h-full" />
-              </div>
-              <h3 className="text-2xl font-medium mb-4">Social Media</h3>
-              <p className="text-white/60">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio.
-              </p>
-            </div>
-
-            {/* Web Design */}
-            <div className="glass rounded-lg p-8 flex flex-col items-center text-center">
-              <div className="w-16 h-16 mb-6 flex items-center justify-center">
-                <img src="/lovable-uploads/6a9dc903-8424-4ed7-be4f-d012c9cc743e.png" alt="Web Design" className="w-full h-full" />
-              </div>
-              <h3 className="text-2xl font-medium mb-4">Web Design</h3>
-              <p className="text-white/60">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio.
-              </p>
-            </div>
-
-            {/* Copywriting */}
-            <div className="glass rounded-lg p-8 flex flex-col items-center text-center">
-              <div className="w-16 h-16 mb-6 flex items-center justify-center">
-                <img src="/lovable-uploads/7c0bd7c4-6441-4acb-abb3-ac39a392ce8b.png" alt="Copywriting" className="w-full h-full" />
-              </div>
-              <h3 className="text-2xl font-medium mb-4">Copywriting</h3>
-              <p className="text-white/60">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio.
-              </p>
-            </div>
-
-            {/* Branding */}
-            <div className="glass rounded-lg p-8 flex flex-col items-center text-center">
-              <div className="w-16 h-16 mb-6 flex items-center justify-center">
-                <img src="/lovable-uploads/9facb96e-e63e-41cc-ba61-fc709a7eba6d.png" alt="Branding" className="w-full h-full" />
-              </div>
-              <h3 className="text-2xl font-medium mb-4">Branding</h3>
-              <p className="text-white/60">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio.
-              </p>
-            </div>
-
-            {/* Audiovisual */}
-            <div className="glass rounded-lg p-8 flex flex-col items-center text-center">
-              <div className="w-16 h-16 mb-6 flex items-center justify-center">
-                <img src="/lovable-uploads/f0d77c04-600b-4866-81fa-85b63328ddc5.png" alt="Audiovisual" className="w-full h-full" />
-              </div>
-              <h3 className="text-2xl font-medium mb-4">Audiovisual</h3>
-              <p className="text-white/60">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -150,9 +81,48 @@ const Index = () => {
       <ProjectsSection />
 
       {/* Cases Section */}
-      <CasesSection />
+      <section id="cases" className="min-h-screen py-20 relative">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* +50 Companies */}
+            <div className="glass p-8 rounded-lg text-center">
+              <h3 className="text-4xl font-bold mb-4">
+                <span className="bg-gradient-to-r from-[#00C2FF] via-[#A438FF] to-[#FF8A76] bg-clip-text text-transparent">
+                  +50
+                </span>
+              </h3>
+              <p className="text-white/80">
+                Empresas transformadas e no topo de seu mercado de atuação.
+              </p>
+            </div>
 
-      {/* FAQ Section */}
+            {/* +R$20M Revenue */}
+            <div className="glass p-8 rounded-lg text-center">
+              <h3 className="text-4xl font-bold mb-4">
+                <span className="bg-gradient-to-r from-[#00C2FF] via-[#A438FF] to-[#FF8A76] bg-clip-text text-transparent">
+                  +R$20M
+                </span>
+              </h3>
+              <p className="text-white/80">
+                Faturados para os nossos clientes através de marketing digital
+              </p>
+            </div>
+
+            {/* +6 Years */}
+            <div className="glass p-8 rounded-lg text-center">
+              <h3 className="text-4xl font-bold mb-4">
+                <span className="bg-gradient-to-r from-[#00C2FF] via-[#A438FF] to-[#FF8A76] bg-clip-text text-transparent">
+                  +6
+                </span>
+              </h3>
+              <p className="text-white/80">
+                Anos de experiência no mercado digital com projetos em todo o Brasil.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="faq" className="min-h-screen py-20 relative">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">FAQ</h2>
