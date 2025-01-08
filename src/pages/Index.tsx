@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, MessageCircle } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
@@ -75,12 +75,8 @@ const Index = () => {
               {/* Notification Pills */}
               <div className="absolute top-10 -right-4 glass rounded-lg p-4 transform rotate-12 hover:rotate-0 transition-transform duration-500">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg overflow-hidden">
-                    <img 
-                      src="/lovable-uploads/141c127b-1d2e-40a5-a18f-5ff83f8b4cf1.png"
-                      alt="Lumiuz Logo"
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-white/10">
+                    <MessageCircle className="w-6 h-6" />
                   </div>
                   <div className="text-left">
                     <p className="text-sm font-medium">Nova mensagem</p>
@@ -91,11 +87,11 @@ const Index = () => {
 
               <div className="absolute bottom-10 -left-4 glass rounded-lg p-4 transform rotate-12 hover:rotate-0 transition-transform duration-500">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg overflow-hidden">
+                  <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-white/10">
                     <img 
-                      src="/lovable-uploads/141c127b-1d2e-40a5-a18f-5ff83f8b4cf1.png"
-                      alt="Lumiuz Logo"
-                      className="w-full h-full object-cover"
+                      src="/lovable-uploads/bbf560a9-a5e3-4d51-b9a2-637f6178d886.png"
+                      alt="Sales Icon"
+                      className="w-6 h-6"
                     />
                   </div>
                   <div className="text-left">
@@ -130,7 +126,12 @@ const Index = () => {
                 </div>
                 <a 
                   href="#contato"
-                  className="block text-center bg-black border border-white/10 rounded-lg py-4 px-6 text-white hover:bg-white/10 transition-colors"
+                  className="block text-center bg-black border border-transparent rounded-lg py-4 px-6 text-white hover:bg-white/10 transition-colors relative"
+                  style={{
+                    background: 'linear-gradient(black, black) padding-box, linear-gradient(90deg, #00C2FF, #A438FF, #FF8A76) border-box',
+                    borderWidth: '1px',
+                    borderStyle: 'solid'
+                  }}
                 >
                   Entrar em contato
                 </a>
