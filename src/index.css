@@ -57,3 +57,22 @@
 .gradient-bg {
   @apply bg-gradient-to-br from-[#00C2FF] via-[#A438FF] to-[#FF8A76] animate-gradient bg-[length:400%_400%];
 }
+
+@keyframes mysterious-fade {
+  0% {
+    opacity: 0.4;
+    transform: scale(1.05) rotate(-12deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1) rotate(-6deg);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(1.05) rotate(-12deg);
+  }
+}
+
+.mysterious-animation {
+  animation: mysterious-fade 8s ease-in-out infinite;
+}
