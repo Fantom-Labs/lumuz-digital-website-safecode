@@ -38,11 +38,13 @@ const CasesSection = () => {
   return (
     <section id="cases" className="min-h-screen py-20 relative">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto mb-16">
-          <h2 className="text-4xl font-normal mb-6">Conheça os nossos serviços</h2>
-          <p className="text-white/60 leading-relaxed">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
-          </p>
+        <div className="max-w-7xl mx-auto mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <h2 className="text-[32px] font-normal">Conheça os nossos serviços</h2>
+            <p className="text-white/60 leading-relaxed">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
+            </p>
+          </div>
           <Separator className="bg-white/10 mt-16" />
         </div>
 
