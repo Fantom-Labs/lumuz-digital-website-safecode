@@ -8,6 +8,16 @@ import { ArrowUpRight, MessageCircle, DollarSign } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
+  // Team member images array
+  const teamMembers = [
+    "/lovable-uploads/fd3e7c2d-c703-42ab-bfb7-84b29dbb0bb6.png",
+    "/lovable-uploads/f07499d9-083e-4e8e-aaaf-b19ca892c1c9.png",
+    "/lovable-uploads/f9d81bca-cbf0-4ff0-b674-76060e637cb5.png",
+    "/lovable-uploads/bffd77ed-3c8b-4eae-bfd1-394ab82f8441.png",
+    "/lovable-uploads/bbf560a9-a5e3-4d51-b9a2-637f6178d886.png",
+    "/lovable-uploads/b7a0c177-7e5d-41cd-b502-f56cf5a0e990.png"
+  ];
+
   return (
     <div className="min-h-screen bg-black text-white">
       <Navbar />
@@ -113,10 +123,10 @@ const Index = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
                   <div className="flex -space-x-3">
-                    {[...Array(6)].map((_, index) => (
+                    {teamMembers.map((imgSrc, index) => (
                       <img 
                         key={index}
-                        src="/lovable-uploads/fd3e7c2d-c703-42ab-bfb7-84b29dbb0bb6.png" 
+                        src={imgSrc}
                         alt={`Team member ${index + 1}`}
                         className="w-8 h-8 rounded-full border-2 border-black object-cover"
                       />
