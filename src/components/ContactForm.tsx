@@ -20,17 +20,16 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      // Send email using EmailJS
       await emailjs.send(
-        'YOUR_SERVICE_ID', // You'll need to replace this
-        'YOUR_TEMPLATE_ID', // You'll need to replace this
+        'service_lumuz', // Replace with your EmailJS service ID
+        'template_lumuz', // Replace with your EmailJS template ID
         {
           to_email: 'lumuzdigital@gmail.com',
           from_email: formData.email,
           service: formData.service,
           consent: formData.consent ? 'Yes' : 'No',
         },
-        'YOUR_PUBLIC_KEY' // You'll need to replace this
+        'YOUR_PUBLIC_KEY' // We'll replace this with your EmailJS public key
       );
 
       toast({
