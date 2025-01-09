@@ -39,7 +39,7 @@ const AboutSection = () => {
           </div>
 
           <div className="space-y-8">
-            <h2 className="text-4xl font-bold">
+            <h2 className="text-3xl font-normal">
               Somos uma agência criativa especializada em acelerar seus resultados na internet.
             </h2>
             <p className="text-white/80 text-lg">
