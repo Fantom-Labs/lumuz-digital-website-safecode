@@ -38,7 +38,7 @@ const HeroSection = () => {
               className="group flex flex-col items-center justify-center w-[120px] h-[120px] glass hover:bg-white/10 transition-all duration-300 rounded-full"
             >
               <ArrowUpRight className="w-12 h-12 mb-1" strokeWidth={1} />
-              <p className="font-satoshi text-xs tracking-wider uppercase font-normal">Contato</p>
+              <p className="font-satoshi uppercase text-sm tracking-wider">Contato</p>
             </a>
           </div>
 
