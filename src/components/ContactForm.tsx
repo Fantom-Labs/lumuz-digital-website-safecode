@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 
@@ -45,7 +44,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
-      <div className="space-y-4">
+      <div className="space-y-2">
         <label className="text-sm text-white/80">E-mail</label>
         <Input
           type="email"
@@ -53,23 +52,23 @@ const ContactForm = () => {
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           required
-          className="glass"
+          className="bg-[#1A1A1A] border-none h-14 text-white placeholder:text-white/60"
         />
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-2">
         <label className="text-sm text-white/80">Estou interessado em</label>
         <Select
           value={formData.service}
           onValueChange={(value) => setFormData({ ...formData, service: value })}
         >
-          <SelectTrigger className="glass">
+          <SelectTrigger className="bg-[#1A1A1A] border-none h-14 text-white">
             <SelectValue placeholder="Selecione o serviço" />
           </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="web">Web Design</SelectItem>
-            <SelectItem value="branding">Branding</SelectItem>
-            <SelectItem value="social">Social Media</SelectItem>
+          <SelectContent className="bg-[#1A1A1A] border-white/10">
+            <SelectItem value="web" className="text-white hover:bg-white/10">Web Design</SelectItem>
+            <SelectItem value="branding" className="text-white hover:bg-white/10">Branding</SelectItem>
+            <SelectItem value="social" className="text-white hover:bg-white/10">Social Media</SelectItem>
           </SelectContent>
         </Select>
       </div>
@@ -81,7 +80,7 @@ const ContactForm = () => {
           onCheckedChange={(checked) => 
             setFormData({ ...formData, consent: checked as boolean })
           }
-          className="mt-1"
+          className="mt-1 border-white/60 data-[state=checked]:bg-white data-[state=checked]:text-black"
         />
         <label htmlFor="consent" className="text-sm text-white/60">
           Eu quero receber notícias gerais e atualizações sobre a Lumuz, eu consinto que meus dados sejam armazenados com base nas políticas de privacidade.
@@ -91,7 +90,7 @@ const ContactForm = () => {
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="w-full glass hover:bg-white/10 rounded-full text-white"
+        className="w-full bg-[#1A1A1A] hover:bg-white/10 text-white h-14 rounded-full"
       >
         {isSubmitting ? "Enviando..." : "Enviar"}
       </Button>
