@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -19,11 +20,22 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      console.log("Form submitted:", formData);
-      
+      // Send email using EmailJS
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // You'll need to replace this
+        'YOUR_TEMPLATE_ID', // You'll need to replace this
+        {
+          to_email: 'lumuzdigital@gmail.com',
+          from_email: formData.email,
+          service: formData.service,
+          consent: formData.consent ? 'Yes' : 'No',
+        },
+        'YOUR_PUBLIC_KEY' // You'll need to replace this
+      );
+
       toast({
-        title: "Success!",
-        description: "Your message has been sent successfully.",
+        title: "Sucesso!",
+        description: "Sua mensagem foi enviada com sucesso.",
       });
       
       setFormData({
@@ -33,8 +45,8 @@ const ContactForm = () => {
       });
     } catch (error) {
       toast({
-        title: "Error",
-        description: "There was an error sending your message. Please try again.",
+        title: "Erro",
+        description: "Houve um erro ao enviar sua mensagem. Por favor, tente novamente.",
         variant: "destructive",
       });
     } finally {
