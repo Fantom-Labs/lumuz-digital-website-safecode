@@ -26,13 +26,13 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex flex-1 items-center justify-between py-4 text-left font-medium transition-all",
+        "flex flex-1 items-center justify-between py-4 text-left font-medium transition-all group",
         className
       )}
       {...props}
     >
       {children}
-      <div className="glass h-10 w-10 rounded-[2px] flex items-center justify-center shrink-0 group-hover:bg-white/20 transition-colors duration-300">
+      <div className="glass h-10 w-10 rounded-[2px] flex items-center justify-center shrink-0 transition-colors duration-300">
         {props["data-state"] === "open" ? (
           <Minus className="h-5 w-5" />
         ) : (
