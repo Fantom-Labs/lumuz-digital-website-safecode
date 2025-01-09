@@ -69,22 +69,11 @@ const Index = () => {
             {/* Left side - Image and Notifications */}
             <div className="relative">
               {/* Main Image */}
-              <div className="relative">
-                <div 
-                  className="absolute inset-0 rounded-lg"
-                  style={{
-                    background: 'linear-gradient(135deg, #00C2FF, #A438FF, #FF8A76)',
-                    filter: 'blur(30px)',
-                    opacity: '0.5',
-                    transform: 'rotate(-12deg) scale(1.1)',
-                  }}
-                />
-                <img
-                  src="/lovable-uploads/f07499d9-083e-4e8e-aaaf-b19ca892c1c9.png"
-                  alt="Laptop mockup with gradient lighting effect"
-                  className="w-full h-auto rounded-lg transform -rotate-12 hover:rotate-0 transition-transform duration-500 mysterious-animation glass relative z-10"
-                />
-              </div>
+              <img
+                src="/lovable-uploads/f07499d9-083e-4e8e-aaaf-b19ca892c1c9.png"
+                alt="Laptop mockup"
+                className="w-full h-auto rounded-lg transform -rotate-12 hover:rotate-0 transition-transform duration-500 mysterious-animation glass"
+              />
               
               {/* Notification Pills */}
               <div className="absolute top-10 -right-4 glass rounded-lg p-4 transform rotate-12 hover:rotate-0 transition-transform duration-500">
