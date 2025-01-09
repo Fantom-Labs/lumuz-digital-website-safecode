@@ -32,7 +32,7 @@ const AccordionTrigger = React.forwardRef<
       {...props}
     >
       {children}
-      <div className="glass h-10 w-10 rounded-[2px] flex items-center justify-center shrink-0 group-hover:bg-white/20 transition-colors duration-300">
+      <div className="glass h-10 w-10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-white/20 transition-colors duration-300">
         {props["data-state"] === "open" ? (
           <Minus className="h-5 w-5" />
         ) : (
