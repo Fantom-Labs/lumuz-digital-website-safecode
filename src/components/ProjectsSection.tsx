@@ -58,7 +58,12 @@ const ProjectsSection = () => {
           </div>
 
           {/* Project Card 3 */}
-          <div className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-[#888888]">
+          <div className="group relative aspect-[4/3] overflow-hidden rounded-lg">
+            <img 
+              src="/lovable-uploads/9a182f73-d408-4003-bf76-43a1722e4e5d.png"
+              alt="Chez Nanny branding"
+              className="w-full h-full object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60" />
             <div className="absolute bottom-0 left-0 p-6 w-full">
               <div className="flex flex-wrap gap-2 mb-3">
@@ -72,8 +77,8 @@ const ProjectsSection = () => {
                   Social Media
                 </span>
               </div>
-              <h3 className="text-lg font-medium">Talvan Sobreiro</h3>
-              <p className="text-sm text-white/60">Rede clínica</p>
+              <h3 className="text-lg font-medium">Chez Nanny</h3>
+              <p className="text-sm text-white/60">Restaurante</p>
             </div>
           </div>
         </div>
