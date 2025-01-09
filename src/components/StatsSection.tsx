@@ -25,7 +25,7 @@ const StatsSection = () => {
               key={index}
               className="bg-black/20 backdrop-blur-md p-8 rounded-lg text-center space-y-4"
             >
-              <h3 className="text-5xl font-bold">
+              <h3 className="text-[32px] font-bold">
                 <span className="text-[#00C2FF]">+</span>
                 <span className="bg-gradient-to-r from-[#A438FF] to-[#FF8A76] bg-clip-text text-transparent">
                   {stat.number}
