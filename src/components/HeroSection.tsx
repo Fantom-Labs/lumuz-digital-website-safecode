@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowDownRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const HeroSection = () => {
@@ -37,7 +37,7 @@ const HeroSection = () => {
               href="#contato" 
               className="group flex flex-col items-center justify-center w-[120px] h-[120px] glass hover:bg-white/10 transition-all duration-300 rounded-full"
             >
-              <ArrowDownRight className="w-12 h-12 mb-1 rotate-45" strokeWidth={1} />
+              <ArrowUpRight className="w-12 h-12 mb-1" strokeWidth={1} />
               <p className="font-satoshi uppercase text-sm tracking-wider">Contato</p>
             </a>
           </div>
