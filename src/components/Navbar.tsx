@@ -82,38 +82,49 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Navigation Menu */}
-        {isOpen && (
-          <div className="md:hidden glass">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className={`block px-3 py-2 rounded-md text-base font-medium ${
-                    activeSection === item.href.slice(1)
-                      ? "text-white bg-white/10"
-                      : "text-white/70 hover:text-white hover:bg-white/5"
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.label}
-                </a>
-              ))}
-              
-              {/* Mobile Social Media Icons */}
-              <div className="flex items-center space-x-4 px-3 py-2">
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  <Instagram size={20} />
-                </a>
-              </div>
+        <div
+          className={`fixed top-0 right-0 h-full w-64 bg-black/10 backdrop-blur-md transform transition-transform duration-300 ease-in-out md:hidden ${
+            isOpen ? "translate-x-0" : "translate-x-full"
+          } shadow-[8px_8px_16px_rgba(0,0,0,0.25),-8px_-8px_16px_rgba(255,255,255,0.1)]`}
+        >
+          <div className="flex flex-col h-full pt-16 px-4">
+            <div className="flex justify-end mb-8">
+              <button
+                className="text-white p-2"
+                onClick={() => setIsOpen(false)}
+              >
+                <X size={24} />
+              </button>
+            </div>
+            {navItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className={`px-4 py-3 mb-2 rounded-md text-base font-medium transition-colors ${
+                  activeSection === item.href.slice(1)
+                    ? "text-white bg-white/10"
+                    : "text-white/70 hover:text-white hover:bg-white/5"
+                }`}
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
+              </a>
+            ))}
+            
+            {/* Mobile Social Media Icons */}
+            <div className="mt-auto mb-8 px-4">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-white transition-colors flex items-center gap-2"
+              >
+                <Instagram size={20} />
+                <span>Instagram</span>
+              </a>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );
