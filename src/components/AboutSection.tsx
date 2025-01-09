@@ -10,10 +10,10 @@ const AboutSection = () => {
             <img
               src="/lovable-uploads/24c657e9-20e8-458c-8bed-47ae63e80379.png"
               alt="Laptop with gradient lighting"
-              className="w-full h-auto rounded-lg transform -rotate-12 hover:rotate-0 transition-transform duration-500 mysterious-animation glass"
+              className="w-full h-auto rounded-lg glass"
             />
             
-            <div className="absolute top-10 -right-4 glass rounded-lg p-4 transform rotate-12 hover:rotate-0 transition-transform duration-500">
+            <div className="absolute top-10 -right-4 glass rounded-lg p-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-white/10">
                   <MessageCircle className="w-6 h-6" />
@@ -25,7 +25,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className="absolute bottom-10 -left-4 glass rounded-lg p-4 transform rotate-12 hover:rotate-0 transition-transform duration-500">
+            <div className="absolute bottom-10 -left-4 glass rounded-lg p-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-white/10">
                   <DollarSign className="w-6 h-6" />
