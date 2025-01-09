@@ -182,7 +182,7 @@ const Index = () => {
                 Agende uma conversa com nossa equipe. Estamos dispostos a entender sobre seu negócio e oferecer uma solução eficiente para você aumentar as vendas.
               </p>
               <a
-                href="https://wa.me/your-whatsapp-number"
+                href="https://wa.me/5511963114850"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 glass hover:bg-white/10 transition-all duration-300 rounded-full px-6 py-3 w-full border border-white/10"
