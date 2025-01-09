@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram, WhatsApp } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,21 +41,43 @@ const Navbar = () => {
             <img src="/lovable-uploads/7f93aa70-d1a1-45d9-84bf-e11b5e4868d5.png" alt="Logo" className="h-8" />
           </a>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
+          <div className="hidden md:flex items-center">
+            {/* Desktop Navigation */}
+            <div className="flex space-x-8 mr-8">
+              {navItems.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className={`text-sm font-medium transition-colors hover:text-white/90 ${
+                    activeSection === item.href.slice(1)
+                      ? "text-white"
+                      : "text-white/70"
+                  }`}
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+
+            {/* Social Media Icons */}
+            <div className="flex items-center space-x-4">
               <a
-                key={item.label}
-                href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-white/90 ${
-                  activeSection === item.href.slice(1)
-                    ? "text-white"
-                    : "text-white/70"
-                }`}
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-white transition-colors"
               >
-                {item.label}
+                <Instagram size={20} />
               </a>
-            ))}
+              <a
+                href="https://wa.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-white transition-colors"
+              >
+                <WhatsApp size={20} />
+              </a>
+            </div>
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -85,6 +107,26 @@ const Navbar = () => {
                   {item.label}
                 </a>
               ))}
+              
+              {/* Mobile Social Media Icons */}
+              <div className="flex items-center space-x-4 px-3 py-2">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:text-white transition-colors"
+                >
+                  <Instagram size={20} />
+                </a>
+                <a
+                  href="https://wa.me/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:text-white transition-colors"
+                >
+                  <WhatsApp size={20} />
+                </a>
+              </div>
             </div>
           </div>
         )}
