@@ -34,11 +34,18 @@ const FAQSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-16 gap-8">
-            <h2 className="text-[32px] font-normal">Alguma dúvida?</h2>
-            <p className="text-white/60 max-w-md text-right">
-              At vero eos et accusamus et iusto odio dignissimos ducimus lorem.
-            </p>
+            <h2 className="text-[32px] font-normal text-left">Alguma dúvida?</h2>
+            <div className="flex flex-col items-start md:items-end gap-2">
+              <p className="text-white/60 max-w-md text-left md:text-right">
+                At vero eos et accusamus et iusto odio
+              </p>
+              <p className="text-white/60 max-w-md text-left md:text-right">
+                dignissimos ducimus lorem.
+              </p>
+            </div>
           </div>
+
+          <div className="h-[1px] w-full bg-[#363636] mb-16" />
 
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
