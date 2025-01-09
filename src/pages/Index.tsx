@@ -112,13 +112,12 @@ const Index = () => {
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
-                  <div className="flex -space-x-2">
-                    {[...Array(6)].map((_, index) => (
-                      <div
-                        key={index}
-                        className="w-8 h-8 rounded-full bg-gray-300 border-2 border-black"
-                      />
-                    ))}
+                  <div className="flex -space-x-3">
+                    <img 
+                      src="/lovable-uploads/fd3e7c2d-c703-42ab-bfb7-84b29dbb0bb6.png" 
+                      alt="Team members" 
+                      className="w-8 h-8 rounded-full border-2 border-black object-cover"
+                    />
                   </div>
                   <span className="text-sm text-white/80">
                     RESULTADOS GERADOS PARA +100 CLIENTES.
@@ -197,3 +196,4 @@ const Index = () => {
 };
 
 export default Index;
+
