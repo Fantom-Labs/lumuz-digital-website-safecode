@@ -151,7 +151,6 @@ const Index = () => {
 
       {/* FAQ Section */}
       <FAQSection />
-      <Separator className="bg-[#363636] h-[1px] w-full max-w-4xl mx-auto" />
 
       {/* Contact Section */}
       <section id="contato" className="py-32 relative">
@@ -164,8 +163,6 @@ const Index = () => {
               Entre em contato conosco para uma consulta gratuita e transforme suas mídias e suas vendas em mais uma história de sucesso digital na Lumuz.
             </p>
           </div>
-
-          <Separator className="bg-[#363636] h-[1px] w-full mb-16" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <ContactForm />
