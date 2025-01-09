@@ -141,14 +141,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Cases Section */}
-      <CasesSection />
-
       {/* Projects Section */}
       <ProjectsSection />
 
-      {/* Stats Section - Moved here */}
+      {/* Stats Section */}
       <StatsSection />
+
+      {/* Cases Section - Moved above FAQ */}
+      <CasesSection />
 
       {/* FAQ Section */}
       <FAQSection />
