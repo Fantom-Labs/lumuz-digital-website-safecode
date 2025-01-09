@@ -18,7 +18,12 @@ const ProjectsSection = () => {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Project Card 1 */}
-          <div className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-[#888888]">
+          <div className="group relative aspect-[4/3] overflow-hidden rounded-lg">
+            <img 
+              src="/lovable-uploads/1fd1360f-5c05-433a-aa37-efb39b3fc03e.png"
+              alt="Odonto Tambiá project"
+              className="w-full h-full object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60" />
             <div className="absolute bottom-0 left-0 p-6 w-full">
               <div className="flex flex-wrap gap-2 mb-3">
