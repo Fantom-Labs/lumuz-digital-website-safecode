@@ -164,6 +164,8 @@ const Index = () => {
             </p>
           </div>
 
+          <Separator className="bg-[#363636] h-[1px] w-full mb-16" />
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <ContactForm />
             
