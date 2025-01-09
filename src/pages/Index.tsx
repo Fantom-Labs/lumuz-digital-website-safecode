@@ -144,11 +144,11 @@ const Index = () => {
       {/* Cases Section */}
       <CasesSection />
 
-      {/* Stats Section - Moved here */}
-      <StatsSection />
-
       {/* Projects Section */}
       <ProjectsSection />
+
+      {/* Stats Section - Moved here */}
+      <StatsSection />
 
       {/* FAQ Section */}
       <FAQSection />
