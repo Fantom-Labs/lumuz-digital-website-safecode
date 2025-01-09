@@ -168,9 +168,11 @@ const Index = () => {
           <Separator className="bg-[#363636] h-[1px] w-full mb-16" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            <ContactForm />
+            <div className="glass p-12 rounded-lg border border-white/10">
+              <ContactForm />
+            </div>
             
-            <div className="bg-[#1A1A1A] rounded-lg p-12 flex flex-col items-center justify-center text-center space-y-8">
+            <div className="glass rounded-lg p-12 flex flex-col items-center justify-center text-center space-y-8 border border-white/10">
               <img
                 src="/lovable-uploads/141c127b-1d2e-40a5-a18f-5ff83f8b4cf1.png"
                 alt="Lumuz Digital"
@@ -183,10 +185,10 @@ const Index = () => {
                 href="https://wa.me/your-whatsapp-number"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 bg-[#1A1A1A] hover:bg-white/10 transition-all duration-300 rounded-full px-6 py-3 w-full border border-white/10"
+                className="flex items-center justify-center gap-2 glass hover:bg-white/10 transition-all duration-300 rounded-full px-6 py-3 w-full border border-white/10"
               >
                 <MessageCircle className="w-5 h-5" />
-                <span className="uppercase text-sm tracking-wider">Falar com a Lumuz</span>
+                <span className="uppercase text-sm tracking-wider">FALAR COM A LUMUZ</span>
               </a>
             </div>
           </div>
@@ -197,4 +199,3 @@ const Index = () => {
 };
 
 export default Index;
-

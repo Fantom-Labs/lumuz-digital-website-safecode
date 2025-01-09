@@ -52,7 +52,7 @@ const ContactForm = () => {
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           required
-          className="bg-[#1A1A1A] border-none h-14 text-white placeholder:text-white/60"
+          className="glass border-white/10 h-14 text-white placeholder:text-white/60"
         />
       </div>
 
@@ -62,10 +62,10 @@ const ContactForm = () => {
           value={formData.service}
           onValueChange={(value) => setFormData({ ...formData, service: value })}
         >
-          <SelectTrigger className="bg-[#1A1A1A] border-none h-14 text-white">
+          <SelectTrigger className="glass border-white/10 h-14 text-white">
             <SelectValue placeholder="Selecione o serviço" />
           </SelectTrigger>
-          <SelectContent className="bg-[#1A1A1A] border-white/10">
+          <SelectContent className="glass border-white/10">
             <SelectItem value="web" className="text-white hover:bg-white/10">Web Design</SelectItem>
             <SelectItem value="branding" className="text-white hover:bg-white/10">Branding</SelectItem>
             <SelectItem value="social" className="text-white hover:bg-white/10">Social Media</SelectItem>
@@ -90,7 +90,7 @@ const ContactForm = () => {
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-[#1A1A1A] hover:bg-white/10 text-white h-14 rounded-full"
+        className="w-full glass hover:bg-white/10 text-white h-14 rounded-full border border-white/10"
       >
         {isSubmitting ? "Enviando..." : "Enviar"}
       </Button>
