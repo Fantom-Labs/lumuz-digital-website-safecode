@@ -70,8 +70,8 @@ const Index = () => {
             <div className="relative">
               {/* Main Image */}
               <img
-                src="/lovable-uploads/f07499d9-083e-4e8e-aaaf-b19ca892c1c9.png"
-                alt="Laptop mockup"
+                src="/lovable-uploads/24c657e9-20e8-458c-8bed-47ae63e80379.png"
+                alt="Laptop with gradient lighting"
                 className="w-full h-auto rounded-lg transform -rotate-12 hover:rotate-0 transition-transform duration-500 mysterious-animation glass"
               />
               
