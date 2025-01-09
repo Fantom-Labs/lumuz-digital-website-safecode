@@ -1,6 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -55,57 +54,58 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-8">
-      <div className="space-y-2">
-        <label className="text-sm text-white/80">E-mail</label>
-        <Input
-          type="email"
-          placeholder="Endereço de e-mail"
-          value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          required
-          className="glass border-white/10 h-14 text-white placeholder:text-white/60"
-        />
-      </div>
+    <form onSubmit={handleSubmit} className="space-y-6">
+      <Input
+        type="email"
+        placeholder="Email"
+        value={formData.email}
+        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+        required
+      />
 
-      <div className="space-y-2">
-        <label className="text-sm text-white/80">Estou interessado em</label>
-        <Select
-          value={formData.service}
-          onValueChange={(value) => setFormData({ ...formData, service: value })}
-        >
-          <SelectTrigger className="glass border-white/10 h-14 text-white">
-            <SelectValue placeholder="Selecione o serviço" />
-          </SelectTrigger>
-          <SelectContent className="glass border-white/10">
-            <SelectItem value="web" className="text-white hover:bg-white/10">Web Design</SelectItem>
-            <SelectItem value="branding" className="text-white hover:bg-white/10">Branding</SelectItem>
-            <SelectItem value="social" className="text-white hover:bg-white/10">Social Media</SelectItem>
-          </SelectContent>
-        </Select>
-      </div>
+      <Select
+        value={formData.service}
+        onValueChange={(value) => setFormData({ ...formData, service: value })}
+        required
+      >
+        <SelectTrigger>
+          <SelectValue placeholder="Selecione um serviço" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="branding">Branding</SelectItem>
+          <SelectItem value="web">Web</SelectItem>
+          <SelectItem value="social">Social</SelectItem>
+        </SelectContent>
+      </Select>
 
-      <div className="flex items-start space-x-2">
+      <div className="flex items-center space-x-2">
         <Checkbox
           id="consent"
           checked={formData.consent}
-          onCheckedChange={(checked) => 
+          onCheckedChange={(checked) =>
             setFormData({ ...formData, consent: checked as boolean })
           }
-          className="mt-1 border-white/60 data-[state=checked]:bg-white data-[state=checked]:text-black"
         />
-        <label htmlFor="consent" className="text-sm text-white/60">
-          Eu quero receber notícias gerais e atualizações sobre a Lumuz, eu consinto que meus dados sejam armazenados com base nas políticas de privacidade.
+        <label
+          htmlFor="consent"
+          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        >
+          Aceito receber comunicações
         </label>
       </div>
 
-      <Button
-        type="submit"
-        disabled={isSubmitting}
-        className="w-full glass hover:bg-white/10 text-white h-14 rounded-full border border-white/10"
+      <a 
+        href="#" 
+        className="group flex flex-col items-center justify-center w-[120px] h-[120px] glass hover:bg-white/10 transition-all duration-300 rounded-full"
+        onClick={(e) => {
+          e.preventDefault();
+          handleSubmit(e as any);
+        }}
       >
-        {isSubmitting ? "Enviando..." : "Enviar"}
-      </Button>
+        <p className="font-satoshi uppercase text-sm tracking-wider">
+          {isSubmitting ? "Enviando..." : "Enviar"}
+        </p>
+      </a>
     </form>
   );
 };
