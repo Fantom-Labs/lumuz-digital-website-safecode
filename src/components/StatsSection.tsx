@@ -3,15 +3,15 @@ import { Card } from "@/components/ui/card";
 const StatsSection = () => {
   const stats = [
     {
-      number: "+50",
+      number: "50",
       description: "Empresas transformadas e no topo de seu mercado de atuação.",
     },
     {
-      number: "+R$20M",
+      number: "R$20M",
       description: "Faturados para os nossos clientes através de marketing digital",
     },
     {
-      number: "+6",
+      number: "6",
       description: "Anos de experiência no mercado digital com projetos em todo o Brasil.",
     }
   ];
@@ -25,14 +25,11 @@ const StatsSection = () => {
               key={index}
               className="bg-black/20 backdrop-blur-md p-8 rounded-lg text-center space-y-4"
             >
-              <h3 
-                className="text-5xl font-bold bg-clip-text text-transparent"
-                style={{
-                  backgroundImage: 'linear-gradient(to right, #00C2FF, #A438FF, #FF8A76)',
-                  WebkitBackgroundClip: 'text',
-                }}
-              >
-                {stat.number}
+              <h3 className="text-5xl font-bold">
+                <span className="text-[#00C2FF]">+</span>
+                <span className="bg-gradient-to-r from-[#A438FF] to-[#FF8A76] bg-clip-text text-transparent">
+                  {stat.number}
+                </span>
               </h3>
               <p className="text-white/80">
                 {stat.description}
