@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Instagram, WhatsApp } from "lucide-react";
+import { Menu, X, Instagram, MessageCircle } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,7 +75,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
               >
-                <WhatsApp size={20} />
+                <MessageCircle size={20} />
               </a>
             </div>
           </div>
@@ -124,7 +124,7 @@ const Navbar = () => {
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-white transition-colors"
                 >
-                  <WhatsApp size={20} />
+                  <MessageCircle size={20} />
                 </a>
               </div>
             </div>
