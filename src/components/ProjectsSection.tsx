@@ -2,7 +2,7 @@ import { Separator } from "@/components/ui/separator";
 
 const ProjectsSection = () => {
   return (
-    <section className="py-20 relative">
+    <section id="cases" className="py-20 relative">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
           <h2 className="text-[28px] max-w-xl leading-tight md:whitespace-normal whitespace-pre-line">
