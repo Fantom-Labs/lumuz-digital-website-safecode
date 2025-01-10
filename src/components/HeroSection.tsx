@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen pt-16 relative overflow-hidden">
       <div 
-        className="absolute inset-0 bg-cover bg-center md:bg-[center_-200px] bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center md:bg-[center_top] bg-no-repeat"
         style={{ 
           backgroundImage: "url('/lovable-uploads/af0c2148-1349-4969-9da8-49ee6d3e9ff8.png')",
           backgroundSize: 'cover',
