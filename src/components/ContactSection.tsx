@@ -12,7 +12,7 @@ const ContactSection = () => {
         style={{
           backgroundImage: "url('/lovable-uploads/88e86790-b4a8-4d9b-afb6-b5c4a1672be3.png')",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "top center",
           mixBlendMode: "screen",
         }}
       />
