@@ -84,4 +84,11 @@
 
 .mysterious-animation {
   animation: mysterious-fade 8s ease-in-out infinite;
+  background: linear-gradient(-45deg, #00C2FF, #A438FF, #FF8A76);
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  mix-blend-mode: plus-lighter;
 }
