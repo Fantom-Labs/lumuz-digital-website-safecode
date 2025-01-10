@@ -17,7 +17,7 @@ const HeroSection = () => {
           WebkitFontSmoothing: 'subpixel-antialiased'
         }}
       />
-      <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]" style={{ mixBlendMode: 'multiply' }} />
+      <div className="absolute inset-0 bg-black/20" />
       
       <div className="container mx-auto px-4 pt-20 relative">
         <div className="flex flex-col min-h-[80vh] justify-center">
