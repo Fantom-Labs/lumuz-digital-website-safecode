@@ -48,7 +48,11 @@ const AboutSection = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <div className="flex -space-x-4">
-                  <img src="/lovable-uploads/47d35646-051d-497a-8981-c8012fc02926.png" alt="Client avatars" className="h-12 w-auto" />
+                  <img 
+                    src="/lovable-uploads/47d35646-051d-497a-8981-c8012fc02926.png" 
+                    alt="Client avatars" 
+                    className="h-12 w-auto object-contain max-w-none" 
+                  />
                 </div>
                 <span className="text-sm text-white/80">
                   RESULTADOS GERADOS PARA +100 CLIENTES.
