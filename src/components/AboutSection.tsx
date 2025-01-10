@@ -7,11 +7,10 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 flex items-center min-h-screen">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="relative w-1/2">
-            <div className="gradient-bg absolute inset-0 rounded-lg opacity-50"></div>
             <img
               src="/lovable-uploads/4656f1c8-925e-4625-9ae2-f08e69718ec7.png"
               alt="Dragon logo"
-              className="w-full h-auto rounded-lg glass relative z-10"
+              className="w-full h-auto rounded-lg glass relative z-10 [mix-blend-mode:screen] gradient-bg"
             />
             
             <div className="absolute top-10 -right-4 glass rounded-lg p-4">
