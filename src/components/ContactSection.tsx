@@ -5,8 +5,19 @@ import ContactForm from "@/components/ContactForm";
 
 const ContactSection = () => {
   return (
-    <section id="contato" className="py-32 relative subtle-gradient">
-      <div className="container mx-auto px-4">
+    <section id="contato" className="py-32 relative">
+      {/* Background gradient image */}
+      <div 
+        className="absolute inset-0 w-full h-full opacity-50 z-0"
+        style={{
+          backgroundImage: "url('/lovable-uploads/88e86790-b4a8-4d9b-afb6-b5c4a1672be3.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          mixBlendMode: "screen",
+        }}
+      />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16">
           <h2 className="text-[32px] max-w-md">
             Entre em contato e melhore seus resultados
