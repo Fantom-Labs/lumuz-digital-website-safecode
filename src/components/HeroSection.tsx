@@ -10,8 +10,11 @@ const HeroSection = () => {
         style={{ 
           backgroundImage: "url('/lovable-uploads/af0c2148-1349-4969-9da8-49ee6d3e9ff8.png')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center -200px',
+          backgroundPosition: 'center',
           transform: 'scaleX(-1)',
+          '@media (min-width: 768px)': {
+            backgroundPosition: 'center -200px',
+          },
           imageRendering: '-webkit-optimize-contrast',
           backfaceVisibility: 'hidden',
           WebkitFontSmoothing: 'subpixel-antialiased'
