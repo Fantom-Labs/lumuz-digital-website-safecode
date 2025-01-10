@@ -1,13 +1,14 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "Quanto tempo é necessário para ter resultados?",
+    question: "Como a Lumuz pode me ajudar a vender mais?",
     answer:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius aut unde, dolores accusantium!",
   },
   {
-    question: "Como a Lumuz pode me ajudar a vender mais?",
+    question: "Quanto tempo é necessário para ter resultados?",
     answer:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius aut unde, dolores accusantium!",
   },
