@@ -8,11 +8,13 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: "url('/lovable-uploads/0031cfb1-7d9a-4023-bc34-7b2cc1e4e4bf.png')",
-          backgroundSize: 'cover'
+          backgroundImage: "url('/lovable-uploads/af0c2148-1349-4969-9da8-49ee6d3e9ff8.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          imageRendering: 'crisp-edges'
         }}
       />
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" />
       
       <div className="container mx-auto px-4 pt-20 relative">
         <div className="flex flex-col min-h-[80vh] justify-center">
@@ -38,7 +40,7 @@ const HeroSection = () => {
               className="group flex flex-col items-center justify-center w-[120px] h-[120px] glass hover:bg-white/10 transition-all duration-300 rounded-full"
             >
               <ArrowUpRight className="w-12 h-12 mb-1" strokeWidth={1} />
-              <p className="font-satoshi uppercase text-sm tracking-wider">Contato</p>
+              <p className="font-satoshi uppercase text-xs tracking-wider">Contato</p>
             </a>
           </div>
 
