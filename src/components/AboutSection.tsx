@@ -8,8 +8,8 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <img
-              src="/lovable-uploads/24c657e9-20e8-458c-8bed-47ae63e80379.png"
-              alt="Laptop with gradient lighting"
+              src="/lovable-uploads/4656f1c8-925e-4625-9ae2-f08e69718ec7.png"
+              alt="Dragon logo"
               className="w-full h-auto rounded-lg glass"
             />
             
