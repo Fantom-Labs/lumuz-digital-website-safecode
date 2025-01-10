@@ -10,9 +10,9 @@ const HeroSection = () => {
         style={{ 
           backgroundImage: "url('/lovable-uploads/af0c2148-1349-4969-9da8-49ee6d3e9ff8.png')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'center -100px',
+          transform: 'scaleX(-1)',
           imageRendering: '-webkit-optimize-contrast',
-          transform: 'translateZ(0)',
           backfaceVisibility: 'hidden',
           WebkitFontSmoothing: 'subpixel-antialiased'
         }}
@@ -31,10 +31,12 @@ const HeroSection = () => {
           
           <div className="flex justify-between items-center">
             <div className="max-w-xl">
-              <p className="text-2xl font-satoshi text-white/80 text-left">
+              <p className="text-2xl font-satoshi text-white/80 text-left md:hidden">
+                Acreditamos na <span className="font-playfair italic">magia</span> da criatividade e somos movidos por ela.
+              </p>
+              <p className="text-2xl font-satoshi text-white/80 text-left hidden md:block">
                 Acreditamos na <span className="font-playfair italic">magia</span><br />
-                da criatividade e somos<br />
-                movidos por ela.
+                da criatividade e somos movidos por ela.
               </p>
             </div>
 
