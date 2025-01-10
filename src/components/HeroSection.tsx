@@ -35,8 +35,8 @@ const HeroSection = () => {
                 Acreditamos na <span className="font-playfair italic">magia</span> da criatividade e somos movidos por ela.
               </p>
               <p className="text-2xl font-satoshi text-white/80 text-left hidden md:block">
-                Acreditamos na <span className="font-playfair italic">magia</span> da<br />
-                criatividade e somos movidos por ela.
+                Acreditamos na <span className="font-playfair italic">magia</span><br />
+                da criatividade e somos movidos por ela.
               </p>
             </div>
 
