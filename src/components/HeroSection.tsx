@@ -31,11 +31,11 @@ const HeroSection = () => {
           
           <div className="flex justify-between items-center">
             <div className="max-w-xl">
-              <p className="text-2xl font-satoshi text-white/80 text-left md:hidden">
+              <p className="text-xl font-satoshi text-white/80 text-left md:hidden">
                 Acreditamos na <span className="font-playfair italic">magia</span><br />
                 da criatividade e somos movidos por ela.
               </p>
-              <p className="text-2xl font-satoshi text-white/80 text-left hidden md:block">
+              <p className="text-xl font-satoshi text-white/80 text-left hidden md:block">
                 Acreditamos na <span className="font-playfair italic">magia</span> da criatividade e somos movidos por ela.
               </p>
             </div>
