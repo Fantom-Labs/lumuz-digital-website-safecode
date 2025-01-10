@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 
 const ContactSection = () => {
   return (
-    <section id="contato" className="py-32 relative">
+    <section id="contato" className="py-32 relative subtle-gradient">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16">
           <h2 className="text-[32px] max-w-md">

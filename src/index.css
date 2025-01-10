@@ -58,6 +58,15 @@
   @apply bg-gradient-to-br from-[#00C2FF] via-[#A438FF] to-[#FF8A76] animate-gradient bg-[length:400%_400%];
 }
 
+.subtle-gradient {
+  background: linear-gradient(135deg, 
+    rgba(0, 194, 255, 0.15) 0%,
+    rgba(164, 56, 255, 0.15) 50%,
+    rgba(255, 138, 118, 0.15) 100%
+  );
+  backdrop-filter: blur(100px);
+}
+
 @keyframes mysterious-fade {
   0% {
     opacity: 0.35;
