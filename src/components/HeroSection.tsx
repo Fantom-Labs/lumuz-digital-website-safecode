@@ -11,10 +11,13 @@ const HeroSection = () => {
           backgroundImage: "url('/lovable-uploads/af0c2148-1349-4969-9da8-49ee6d3e9ff8.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          imageRendering: 'crisp-edges'
+          imageRendering: '-webkit-optimize-contrast',
+          transform: 'translateZ(0)',
+          backfaceVisibility: 'hidden',
+          WebkitFontSmoothing: 'subpixel-antialiased'
         }}
       />
-      <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]" style={{ mixBlendMode: 'multiply' }} />
       
       <div className="container mx-auto px-4 pt-20 relative">
         <div className="flex flex-col min-h-[80vh] justify-center">
