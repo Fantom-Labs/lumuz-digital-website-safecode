@@ -6,10 +6,12 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
           <h2 className="text-[28px] max-w-xl leading-tight md:whitespace-normal whitespace-pre-line">
-            {"Unimos estratégia e\ndesign para iluminar\nideias e marcas"}
+            {"Unimos estratégia e\ndesign para "}
+            <span className="font-playfair italic">iluminar</span>
+            {"\nideias e marcas"}
           </h2>
           <p className="text-white/80 max-w-sm">
-            Confira alguns dos nossos projetos para clientes em todo o Brasil.
+            Confira alguns dos nossos <span className="font-playfair italic">serviços</span> para clientes em todo o Brasil.
           </p>
         </div>
 

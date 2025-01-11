@@ -43,7 +43,7 @@ const AboutSection = () => {
 
           <div className="space-y-8">
             <h2 className="text-3xl font-normal">
-              Somos uma agência criativa especializada em acelerar seus resultados na internet.
+              Somos uma <span className="font-playfair italic">agência criativa</span> especializada em acelerar seus resultados na internet.
             </h2>
             <p className="text-white/80 text-lg">
               Para nós, a produção ilumina todo o caminho por onde passa. Criamos estratégias para crescimento de marcas e vendas.
