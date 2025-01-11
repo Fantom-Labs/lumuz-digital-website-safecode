@@ -2,8 +2,11 @@ import React from "react";
 import { MessageCircle } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import ContactForm from "@/components/ContactForm";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const ContactSection = () => {
+  const isMobile = useIsMobile();
+
   return (
     <section id="contato" className="py-32 relative">
       {/* Background gradient image */}
@@ -20,7 +23,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16">
           <h2 className="text-[32px] max-w-md">
-            Entre em contato e melhore seus resultados
+            Entre em contato e melhore seus <span className="font-playfair italic">resultados</span>
           </h2>
           <p className="text-white/80 max-w-md">
             Entre em contato conosco para uma consulta gratuita e transforme suas mídias e suas vendas em mais uma história de sucesso digital na Lumuz.
@@ -30,11 +33,13 @@ const ContactSection = () => {
         <Separator className="bg-[#363636] h-[1px] w-full mb-16" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-          <div className="glass p-12 rounded-lg border border-white/10">
-            <ContactForm />
-          </div>
+          {!isMobile && (
+            <div className="glass p-12 rounded-lg border border-white/10">
+              <ContactForm />
+            </div>
+          )}
           
-          <div className="glass rounded-lg p-12 flex flex-col items-center justify-center text-center space-y-8 border border-white/10">
+          <div className={`glass rounded-lg p-12 flex flex-col items-center justify-center text-center space-y-8 border border-white/10 ${isMobile ? "col-span-1" : ""}`}>
             <img
               src="/lovable-uploads/141c127b-1d2e-40a5-a18f-5ff83f8b4cf1.png"
               alt="Lumuz Digital"
