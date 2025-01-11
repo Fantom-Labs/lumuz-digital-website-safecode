@@ -35,13 +35,13 @@ const FAQSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-16 gap-8">
-            <h2 className="text-[32px] font-normal text-left">Alguma dúvida?</h2>
+            <h2 className="text-[32px] font-normal text-left">Alguma <span className="font-playfair italic">dúvida</span>?</h2>
             <div className="flex flex-col items-start md:items-end gap-2">
               <p className="text-white/60 max-w-md text-left md:text-right">
-                At vero eos et accusamus et iusto odio
+                Entre em contato conosco para uma consulta gratuita e transforme suas mídias e suas vendas em mais uma história de sucesso digital na Lumuz.
               </p>
               <p className="text-white/60 max-w-md text-left md:text-right">
-                dignissimos ducimus lorem.
+                Melhore seus <span className="font-playfair italic">resultados</span> hoje mesmo.
               </p>
             </div>
           </div>

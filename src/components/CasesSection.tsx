@@ -42,8 +42,8 @@ const CasesSection = () => {
         <div className="max-w-7xl mx-auto mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <h2 className="text-[32px] font-normal leading-tight">
-              Conheça os<br />
-              nossos serviços
+              Conheça os nossos<br />
+              <span className="font-playfair italic">serviços</span>
             </h2>
             <p className="text-white/60 leading-relaxed">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
