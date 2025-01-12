@@ -62,7 +62,7 @@ const Navbar = () => {
             {/* Social Media Icons */}
             <div className="flex items-center space-x-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/lumuz.digital"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors"
@@ -103,7 +103,7 @@ const Navbar = () => {
               {/* Mobile Social Media Icons */}
               <div className="flex items-center space-x-4 px-3 py-2">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/lumuz.digital"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-white transition-colors"
