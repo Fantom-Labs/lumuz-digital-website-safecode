@@ -13,7 +13,7 @@ const AboutSection = () => {
             <img
               src="/lovable-uploads/4656f1c8-925e-4625-9ae2-f08e69718ec7.png"
               alt="Dragon logo"
-              className="w-[80%] md:w-full h-auto relative mysterious-animation md:w-auto"
+              className="w-full h-auto relative mysterious-animation md:w-auto"
             />
             
             <div className="absolute md:top-10 top-0 md:-right-4 right-0 glass rounded-lg p-4 z-20">
