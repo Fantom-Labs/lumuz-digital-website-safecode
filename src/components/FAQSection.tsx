@@ -41,7 +41,7 @@ const FAQSection = () => {
                 Entre em contato conosco para uma consulta gratuita e transforme suas mídias e suas vendas em mais uma história de sucesso digital na Lumuz.
               </p>
               <p className="text-white/60 max-w-md text-left md:text-right">
-                Melhore seus <span className="font-playfair italic">resultados</span> hoje mesmo.
+                Melhore seus <span className="font-playfair">resultados</span> hoje mesmo.
               </p>
             </div>
           </div>
