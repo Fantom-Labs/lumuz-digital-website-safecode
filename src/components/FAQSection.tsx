@@ -38,7 +38,7 @@ const FAQSection = () => {
             <h2 className="text-[32px] font-normal text-left">Alguma <span className="font-playfair italic">dúvida</span>?</h2>
             <div className="flex flex-col items-start md:items-end gap-2">
               <p className="text-white/60 max-w-md text-left md:text-right">
-                Entre em contato conosco para uma consulta gratuita e transforme suas mídias e suas vendas em mais uma história de sucesso digital na Lumuz.
+                Encontre respostas claras sobre nossos serviços, processos e como podemos impulsionar sua presença digital. Não encontrou o que procurava? Entre em contato e nossa equipe terá prazer em esclarecer tudo!
               </p>
             </div>
           </div>
