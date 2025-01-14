@@ -7,32 +7,32 @@ const CasesSection = () => {
     {
       icon: ChartLine,
       title: "Gestão de Tráfego",
-      description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio."
+      description: "Estratégias para aumentar a visibilidade e conversão do seu negócio."
     },
     {
       icon: Share2,
       title: "Social Media",
-      description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio."
+      description: "Criação de conteúdo e gerenciamento para engajar o público."
     },
     {
       icon: Palette,
       title: "Web Design",
-      description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio."
+      description: "Desenvolvimento de sites modernos e responsivos."
     },
     {
       icon: PenTool,
       title: "Copywritting",
-      description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio."
+      description: "Textos criativos que convertem visitantes em clientes."
     },
     {
       icon: Layers,
       title: "Branding",
-      description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio."
+      description: "Construção de marcas autênticas e memoráveis."
     },
     {
       icon: Video,
       title: "Audiovisual",
-      description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum distinctio."
+      description: "Produção de vídeos impactantes para promover sua marca."
     }
   ];
 
