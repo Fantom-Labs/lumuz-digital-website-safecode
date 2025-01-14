@@ -6,8 +6,8 @@ const AboutSection = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section id="sobre" className="min-h-screen relative overflow-hidden">
-      <div className="container mx-auto px-4 flex items-center min-h-screen">
+    <section id="sobre" className="min-h-[80vh] lg:min-h-[90vh] relative overflow-hidden">
+      <div className="container mx-auto px-4 flex items-center min-h-[80vh] lg:min-h-[90vh]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className={`relative ${isMobile ? 'flex justify-center' : 'w-1/2'}`}>
             <img
