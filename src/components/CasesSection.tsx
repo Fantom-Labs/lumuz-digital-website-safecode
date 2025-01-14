@@ -46,7 +46,7 @@ const CasesSection = () => {
               <span className="font-playfair italic">serviços</span>
             </h2>
             <p className="text-white/60 leading-relaxed">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
+              Oferecemos soluções estratégicas e personalizadas para aumentar suas vendas e ampliar sua presença digital. Nossa missão é impulsionar seus resultados e transformar sua visão em conquistas.
             </p>
           </div>
           <Separator className="bg-white/10 mt-16" />
