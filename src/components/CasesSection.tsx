@@ -42,8 +42,8 @@ const CasesSection = () => {
         <div className="max-w-7xl mx-auto mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <h2 className="text-[32px] font-normal leading-tight">
-              Conheça os<br />
-              nossos serviços
+              Conheça os nossos<br />
+              <span className="font-playfair italic">serviços</span>
             </h2>
             <p className="text-white/60 leading-relaxed">
               Oferecemos soluções estratégicas e personalizadas para aumentar suas vendas e ampliar sua presença digital. Nossa missão é impulsionar seus resultados e transformar sua visão em conquistas.
