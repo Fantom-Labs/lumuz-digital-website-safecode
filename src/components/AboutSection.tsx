@@ -8,7 +8,7 @@ const AboutSection = () => {
   return (
     <section id="sobre" className="py-20 lg:py-32 relative overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center container mx-auto px-4">
-        <div className={`relative ${isMobile ? 'flex justify-center' : 'w-1/2'}`}>
+        <div className={`relative ${isMobile ? 'flex justify-center' : 'w-1/2'} ml-20`}>
           <img
             src="/lovable-uploads/4656f1c8-925e-4625-9ae2-f08e69718ec7.png"
             alt="Dragon logo"
