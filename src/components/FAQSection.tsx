@@ -35,8 +35,8 @@ const FAQSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-16 gap-8">
             <h2 className="text-[32px] font-normal text-left">Alguma <span className="font-playfair italic">dúvida</span>?</h2>
-            <div className="flex flex-col items-start md:items-end gap-2">
-              <p className="text-white/60 max-w-md text-left md:text-right">
+            <div className="flex flex-col items-start gap-2">
+              <p className="text-white/60 max-w-md text-left">
                 Encontre respostas claras sobre nossos serviços e resultados. Não encontrou o que procurava? Entre em contato e nossa equipe terá prazer em esclarecer tudo!
               </p>
             </div>
