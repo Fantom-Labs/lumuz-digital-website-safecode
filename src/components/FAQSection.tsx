@@ -1,31 +1,30 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
     question: "Como a Lumuz pode me ajudar a vender mais?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius aut unde, dolores accusantium!",
+      "Trabalhamos com estratégias digitais personalizadas, como tráfego pago, branding e social media, para atrair mais clientes e aumentar suas vendas de forma consistente.",
   },
   {
     question: "Quanto tempo é necessário para ter resultados?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius aut unde, dolores accusantium!",
+      "Os resultados podem variar conforme o serviço e o mercado, mas trabalhamos para entregar impactos mensuráveis em semanas, com foco no crescimento sustentável.",
   },
   {
     question: "Como posso entrar em contato?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius aut unde, dolores accusantium!",
+      "Você pode nos contatar pelo formulário no site, redes sociais ou e-mail. Estamos sempre prontos para atender!",
   },
   {
     question: "Como saber o serviço que estou precisando?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius aut unde, dolores accusantium!",
+      "Nossa equipe faz uma análise personalizada do seu negócio para recomendar as melhores soluções para suas metas.",
   },
   {
     question: "Qual a diferença da Lumuz para outras agências?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius aut unde, dolores accusantium!",
+      "Oferecemos uma abordagem focada em resultados reais, com estratégias sob medida e suporte próximo para escalar seu negócio online.",
   },
 ];
 
