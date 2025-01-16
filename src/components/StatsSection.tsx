@@ -23,7 +23,7 @@ const StatsSection = () => {
           {stats.map((stat, index) => (
             <Card 
               key={index}
-              className="bg-black/20 backdrop-blur-md p-8 rounded-lg text-center space-y-4"
+              className="bg-black/20 backdrop-blur-md p-8 rounded-lg text-center space-y-4 border-[#363636]"
             >
               <h3 className="text-[32px] font-bold">
                 <span className="text-[#00C2FF]">+</span>
