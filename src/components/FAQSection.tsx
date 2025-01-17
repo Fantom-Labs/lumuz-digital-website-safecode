@@ -1,5 +1,4 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
@@ -52,11 +51,8 @@ const FAQSection = () => {
                 value={`item-${index}`}
                 className="bg-[#1A1A1A] rounded-[4px] data-[state=open]:bg-[#1A1A1A] transition-colors duration-300 border-none"
               >
-                <AccordionTrigger className="py-6 px-8 text-lg hover:no-underline group">
+                <AccordionTrigger className="py-6 px-8 text-lg hover:no-underline">
                   {faq.question}
-                  <div className="glass h-10 w-10 rounded-[2px] flex items-center justify-center shrink-0 transition-colors duration-300 hover:bg-black/20">
-                    {Plus && <Plus className="h-5 w-5" />}
-                  </div>
                 </AccordionTrigger>
                 <AccordionContent className="text-white/60 px-8">
                   {faq.answer}
