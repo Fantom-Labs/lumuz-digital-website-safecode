@@ -54,11 +54,8 @@ const FAQSection = () => {
               >
                 <AccordionTrigger className="py-6 px-8 text-lg hover:no-underline group">
                   {faq.question}
-                  <div className="glass h-10 w-10 rounded-[2px] flex items-center justify-center shrink-0 transition-all duration-300 hover:bg-black/20 group-data-[state=open]:rotate-180">
-                    <div className="transition-transform duration-300 group-data-[state=open]:rotate-90">
-                      <Plus className="h-5 w-5 transition-opacity duration-300 group-data-[state=open]:opacity-0" />
-                      <Minus className="h-5 w-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-300 opacity-0 group-data-[state=open]:opacity-100" />
-                    </div>
+                  <div className="glass h-10 w-10 rounded-[2px] flex items-center justify-center shrink-0 transition-colors duration-300 hover:bg-black/20">
+                    {Plus && <Plus className="h-5 w-5" />}
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="text-white/60 px-8">
