@@ -1,5 +1,3 @@
-import { Card } from "@/components/ui/card";
-
 const StatsSection = () => {
   const stats = [
     {
@@ -21,7 +19,7 @@ const StatsSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
-            <Card 
+            <div 
               key={index}
               className="bg-black/20 backdrop-blur-md p-8 rounded-lg text-center space-y-4"
             >
@@ -34,7 +32,7 @@ const StatsSection = () => {
               <p className="text-white/80">
                 {stat.description}
               </p>
-            </Card>
+            </div>
           ))}
         </div>
       </div>
