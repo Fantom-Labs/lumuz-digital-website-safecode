@@ -21,15 +21,15 @@ const ContactForm = () => {
 
     try {
       await emailjs.send(
-        'service_lumuz', // Replace with your EmailJS service ID
-        'template_lumuz', // Replace with your EmailJS template ID
+        'service_aqxlwwp', 
+        'template_aqxlwwp',
         {
           to_email: 'lumuzdigital@gmail.com',
           from_email: formData.email,
           service: formData.service,
-          consent: formData.consent ? 'Yes' : 'No',
+          consent: formData.consent ? 'Sim' : 'Não',
         },
-        'YOUR_PUBLIC_KEY' // We'll replace this with your EmailJS public key
+        'Ry3_Hn6Ue5Vy-Qqxm' // Public key do EmailJS
       );
 
       toast({
@@ -48,6 +48,7 @@ const ContactForm = () => {
         description: "Houve um erro ao enviar sua mensagem. Por favor, tente novamente.",
         variant: "destructive",
       });
+      console.error('Error sending email:', error);
     } finally {
       setIsSubmitting(false);
     }
