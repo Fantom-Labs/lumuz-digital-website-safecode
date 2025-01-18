@@ -24,7 +24,7 @@ const ContactForm = () => {
         'service_yodhiiy',
         'template_et7rikp',
         {
-          to_email: 'lumuzdigital@gmail.com',
+          to_email: 'fantom.weblabs@gmail.com',
           from_email: formData.email,
           service: formData.service,
           consent: formData.consent ? 'Sim' : 'Não',
