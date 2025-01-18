@@ -21,15 +21,15 @@ const ContactForm = () => {
 
     try {
       await emailjs.send(
-        'SEU_SERVICE_ID', // Substitua pelo seu Service ID
-        'SEU_TEMPLATE_ID', // Substitua pelo seu Template ID
+        'service_xxxxxxx', // Coloque seu Service ID aqui (exemplo: service_abc123)
+        'template_xxxxxxx', // Coloque seu Template ID aqui (exemplo: template_abc123)
         {
           to_email: 'lumuzdigital@gmail.com',
           from_email: formData.email,
           service: formData.service,
           consent: formData.consent ? 'Sim' : 'Não',
         },
-        'SUA_PUBLIC_KEY' // Substitua pela sua Public Key
+        'XXXXXXXXXXXXX' // Coloque sua Public Key aqui
       );
 
       toast({
