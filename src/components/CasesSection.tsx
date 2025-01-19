@@ -1,8 +1,26 @@
 import { Separator } from "@/components/ui/separator";
 import { Card } from "@/components/ui/card";
 import { ChartLine, Share2, Palette, PenTool, Layers, Video } from "lucide-react";
+import { useEffect } from "react";
 
 const CasesSection = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.parallax-section');
+      elements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        const scrolled = window.scrollY;
+        const speed = 0.15;
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+          (el as HTMLElement).style.transform = `translateY(${scrolled * speed}px)`;
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const cases = [
     {
       icon: ChartLine,
@@ -37,7 +55,8 @@ const CasesSection = () => {
   ];
 
   return (
-    <section id="cases" className="py-32 relative">
+    <section id="cases" className="py-32 relative overflow-hidden parallax-section">
+      <div className="parallax-content">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
@@ -89,6 +108,7 @@ const CasesSection = () => {
           </linearGradient>
         </defs>
       </svg>
+      </div>
     </section>
   );
 };

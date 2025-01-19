@@ -47,6 +47,8 @@
   }
   html {
     @apply scroll-smooth;
+    height: 100%;
+    overflow-x: hidden;
   }
 }
 
@@ -91,4 +93,27 @@
   background-clip: text;
   color: transparent;
   mix-blend-mode: plus-lighter;
+}
+
+.parallax-section {
+  position: relative;
+  will-change: transform;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: translateZ(-10px) scale(2);
+}
+
+.parallax-content {
+  transform: translateZ(0);
+  position: relative;
+  z-index: 1;
 }
