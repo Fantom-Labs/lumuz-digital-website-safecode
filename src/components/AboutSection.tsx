@@ -47,7 +47,7 @@ const AboutSection = () => {
           <p className="text-white/80 text-lg">
             Para nós, a produção ilumina todo o caminho por onde passa. Criamos estratégias para crescimento de marcas e vendas.
           </p>
-          <div className="space-y-4 mt-8">
+          <div className="space-y-4">
             <div className="flex items-center gap-2 -mt-4">
               <div className="flex -space-x-4">
                 <img 
