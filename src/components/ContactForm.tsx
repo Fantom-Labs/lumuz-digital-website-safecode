@@ -19,21 +19,31 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Adicionando console.log para debug
+    console.log("Enviando dados:", formData);
+
     const templateParams = {
-      to_name: "Lumuz Digital",
       from_name: formData.email,
+      to_name: "Lumuz Digital",
       message: `Serviço de interesse: ${formData.service}`,
       reply_to: formData.email,
+      service: formData.service,
       consent: formData.consent ? 'Sim' : 'Não',
     };
 
+    // Console.log para verificar os parâmetros enviados
+    console.log("Template params:", templateParams);
+
     try {
-      await emailjs.send(
+      const response = await emailjs.send(
         'service_yodhiiy',
         'template_et7rikp',
         templateParams,
         'pitG1Ix1kR7VF_cqs'
       );
+
+      // Console.log para verificar a resposta do EmailJS
+      console.log("EmailJS response:", response);
 
       toast({
         title: "Sucesso!",
@@ -46,12 +56,12 @@ const ContactForm = () => {
         consent: false,
       });
     } catch (error) {
+      console.error('Erro ao enviar email:', error);
       toast({
         title: "Erro",
         description: "Houve um erro ao enviar sua mensagem. Por favor, tente novamente.",
         variant: "destructive",
       });
-      console.error('Error sending email:', error);
     } finally {
       setIsSubmitting(false);
     }
@@ -63,6 +73,7 @@ const ContactForm = () => {
         <label className="text-sm text-white/80">E-mail</label>
         <Input
           type="email"
+          name="from_name"
           placeholder="Endereço de e-mail"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -75,6 +86,7 @@ const ContactForm = () => {
         <label className="text-sm text-white/80">Estou interessado em</label>
         <Select
           value={formData.service}
+          name="service"
           onValueChange={(value) => setFormData({ ...formData, service: value })}
           required
         >
@@ -92,6 +104,7 @@ const ContactForm = () => {
       <div className="flex items-start space-x-2">
         <Checkbox
           id="consent"
+          name="consent"
           checked={formData.consent}
           onCheckedChange={(checked) => 
             setFormData({ ...formData, consent: checked as boolean })
