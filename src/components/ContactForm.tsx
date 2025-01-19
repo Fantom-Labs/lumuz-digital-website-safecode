@@ -19,16 +19,19 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    const templateParams = {
+      to_name: "Lumuz Digital",
+      from_name: formData.email,
+      message: `Serviço de interesse: ${formData.service}`,
+      reply_to: formData.email,
+      consent: formData.consent ? 'Sim' : 'Não',
+    };
+
     try {
       await emailjs.send(
         'service_yodhiiy',
         'template_et7rikp',
-        {
-          to_email: 'fantom.weblabs@gmail.com',
-          from_email: formData.email,
-          service: formData.service,
-          consent: formData.consent ? 'Sim' : 'Não',
-        },
+        templateParams,
         'pitG1Ix1kR7VF_cqs'
       );
 
@@ -73,6 +76,7 @@ const ContactForm = () => {
         <Select
           value={formData.service}
           onValueChange={(value) => setFormData({ ...formData, service: value })}
+          required
         >
           <SelectTrigger className="glass border-white/10 h-14 text-white">
             <SelectValue placeholder="Selecione o serviço" />
