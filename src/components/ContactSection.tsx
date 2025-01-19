@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { MessageCircle } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import ContactForm from "@/components/ContactForm";
@@ -7,25 +7,9 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const ContactSection = () => {
   const isMobile = useIsMobile();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const elements = document.querySelectorAll('.parallax-section');
-      elements.forEach((el) => {
-        const rect = el.getBoundingClientRect();
-        const scrolled = window.scrollY;
-        const speed = 0.15;
-        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-          (el as HTMLElement).style.transform = `translateY(${scrolled * speed}px)`;
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <section id="contato" className="py-32 relative overflow-hidden parallax-section">
+    <section id="contato" className="py-32 relative">
+      {/* Background gradient image */}
       <div 
         className="absolute inset-0 w-full h-full opacity-30 z-0"
         style={{
