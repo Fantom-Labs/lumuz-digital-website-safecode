@@ -11,7 +11,7 @@ const ContactSection = () => {
     <section id="contato" className="py-32 relative">
       {/* Background gradient image */}
       <div 
-        className="absolute inset-0 w-full h-full opacity-30 z-0"
+        className="absolute inset-0 w-full h-full opacity-10 z-0"
         style={{
           backgroundImage: "url('/lovable-uploads/88e86790-b4a8-4d9b-afb6-b5c4a1672be3.png')",
           backgroundSize: "cover",
