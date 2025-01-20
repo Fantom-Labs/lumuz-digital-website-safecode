@@ -26,7 +26,7 @@ const ContactSection = () => {
             Entre em contato e melhore seus resultados
           </h2>
           <p className="text-white/80 max-w-md">
-            Entre em contato conosco para uma consulta gratuita e transforme suas mídias e suas vendas em mais uma história de sucesso digital na Lumuz.
+            Entre em contato conosco para uma consulta gratuita e transforme sua empresa e suas vendas em mais uma história de sucesso na Lumuz.
           </p>
         </div>
 
