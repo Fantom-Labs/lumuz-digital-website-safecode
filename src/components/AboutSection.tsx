@@ -1,6 +1,7 @@
 import React from "react";
 import { MessageCircle, DollarSign } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Separator } from "@/components/ui/separator";
 
 const AboutSection = () => {
   const isMobile = useIsMobile();
@@ -47,6 +48,7 @@ const AboutSection = () => {
           <p className="text-white/80 text-lg">
             Para nós, a produção ilumina todo o caminho por onde passa. Criamos estratégias para crescimento de marcas e vendas.
           </p>
+          <Separator className="my-8 bg-white/10" />
           <div className="space-y-4">
             <div className="flex items-center gap-2 -mt-4">
               <div className="flex -space-x-4">
