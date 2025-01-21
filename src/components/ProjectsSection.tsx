@@ -6,7 +6,8 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
           <h2 className="text-[28px] max-w-xl leading-tight md:whitespace-normal whitespace-pre-line">
-            {"Unimos estratégia e design para\n"}
+            {"Unimos estratégia e\n"}
+            {"design para "}
             <span className="font-playfair">iluminar</span>
             {" ideias e marcas"}
           </h2>
