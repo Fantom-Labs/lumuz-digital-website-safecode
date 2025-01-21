@@ -8,8 +8,8 @@ const ProjectsSection = () => {
           <h2 className="text-[28px] max-w-xl leading-tight md:whitespace-normal whitespace-pre-line">
             {"Unimos estratégia e\n"}
             {"design para "}
-            <span className="font-playfair">iluminar</span>
-            {" ideias e marcas"}
+            <span className="font-playfair italic">iluminar</span>
+            {" \nideias e marcas"}
           </h2>
           <p className="text-white/80 max-w-sm">
             Confira alguns dos nossos serviços para clientes em todo o Brasil.
