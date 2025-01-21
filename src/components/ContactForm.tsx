@@ -6,6 +6,18 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import emailjs from '@emailjs/browser';
 
+// NOTA DE SEGURANÇA:
+// As credenciais do EmailJS foram removidas deste arquivo por motivos de segurança.
+// Para usar este formulário, você precisará:
+// 1. Criar uma conta no EmailJS (emailjs.com)
+// 2. Criar um serviço de email
+// 3. Criar um template de email
+// 4. Substituir as credenciais abaixo com suas próprias credenciais
+
+const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID"; // Substitua com seu Service ID
+const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID"; // Substitua com seu Template ID
+const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY"; // Substitua com sua Public Key
+
 const ContactForm = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -19,9 +31,6 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Adicionando console.log para debug
-    console.log("Enviando dados:", formData);
-
     const templateParams = {
       from_name: formData.email,
       to_name: "Lumuz Digital",
@@ -31,19 +40,21 @@ const ContactForm = () => {
       consent: formData.consent ? 'Sim' : 'Não',
     };
 
-    // Console.log para verificar os parâmetros enviados
-    console.log("Template params:", templateParams);
-
     try {
-      const response = await emailjs.send(
-        'service_yodhiiy',
-        'template_et7rikp',
-        templateParams,
-        'pitG1Ix1kR7VF_cqs'
-      );
+      if (
+        EMAILJS_SERVICE_ID === "YOUR_SERVICE_ID" ||
+        EMAILJS_TEMPLATE_ID === "YOUR_TEMPLATE_ID" ||
+        EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY"
+      ) {
+        throw new Error("Por favor, configure suas credenciais do EmailJS primeiro.");
+      }
 
-      // Console.log para verificar a resposta do EmailJS
-      console.log("EmailJS response:", response);
+      const response = await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_PUBLIC_KEY
+      );
 
       toast({
         title: "Sucesso!",
